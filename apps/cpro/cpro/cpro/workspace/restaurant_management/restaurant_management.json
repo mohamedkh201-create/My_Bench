@@ -1,0 +1,366 @@
+{
+ "app": "cpro",
+ "charts": [],
+ "content": "[{\"id\":\"hdr_quick\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Direct Access &amp; Live Apps</b></span>\",\"col\":12}},{\"id\":\"sc_pos\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POS Terminal\",\"col\":4}},{\"id\":\"sc_kds\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kitchen Display (KDS)\",\"col\":4}},{\"id\":\"sc_menu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Digital Menu\",\"col\":4}},{\"id\":\"sc_open\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Open Shift\",\"col\":4}},{\"id\":\"sc_close\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Close Shift\",\"col\":4}},{\"id\":\"sc_tables\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tables & QR\",\"col\":4}},{\"id\":\"sp_1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hdr_masters\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\",\"col\":12}},{\"id\":\"c_setup\",\"type\":\"card\",\"data\":{\"card_name\":\"Restaurant Setup\",\"col\":4}},{\"id\":\"c_menu\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu Management\",\"col\":4}},{\"id\":\"c_floor\",\"type\":\"card\",\"data\":{\"card_name\":\"Floor & Tables\",\"col\":4}},{\"id\":\"c_shifts\",\"type\":\"card\",\"data\":{\"card_name\":\"Shifts & Cash\",\"col\":4}},{\"id\":\"c_ops\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations\",\"col\":4}},{\"id\":\"c_reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":4}}]",
+ "creation": "2026-08-21 01:13:51.273584",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "hand-platter",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "Restaurant Management",
+ "links": [
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Setup",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cpro Settings",
+   "link_count": 0,
+   "link_to": "Cpro Settings",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "POS Profile",
+   "link_count": 0,
+   "link_to": "POS Profile",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Taxes and Charges Template",
+   "link_count": 0,
+   "link_to": "Sales Taxes and Charges Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Menu Management",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cpro Menu",
+   "link_count": 0,
+   "link_to": "Cpro Menu",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Menu Categories",
+   "link_count": 0,
+   "link_to": "Cpro Menu Category",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Items",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Modifier Groups",
+   "link_count": 0,
+   "link_to": "Cpro Modifier Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Floor & Tables",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rooms / Dining Areas",
+   "link_count": 0,
+   "link_to": "Cpro Room",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tables & QR Codes",
+   "link_count": 0,
+   "link_to": "Cpro Table",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kitchen Stations",
+   "link_count": 0,
+   "link_to": "Cpro Kitchen Station",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Shifts & Cash",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "POS Opening Shift",
+   "link_count": 0,
+   "link_to": "Cpro POS Opening Shift",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "POS Closing Shift",
+   "link_count": 0,
+   "link_to": "Cpro POS Closing Shift",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kitchen Orders (KOT)",
+   "link_count": 0,
+   "link_to": "Cpro KOT",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "POS Invoices",
+   "link_count": 0,
+   "link_to": "POS Invoice",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customers",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports & Analytics",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sales Register",
+   "link_count": 0,
+   "link_to": "Sales Register",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "POS Register",
+   "link_count": 0,
+   "link_to": "POS Register",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Item-wise Sales Register",
+   "link_count": 0,
+   "link_to": "Item-wise Sales Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Portal Settings",
+   "link_count": 0,
+   "link_to": "Cpro Portal Settings",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Order Audit Logs",
+   "link_count": 0,
+   "link_to": "Cpro Order Audit Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Portal Banners",
+   "link_count": 0,
+   "link_to": "Cpro Portal Banner",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Portal Requests",
+   "link_count": 0,
+   "link_to": "Cpro Portal Request",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-21 12:25:33.836823",
+ "modified_by": "Administrator",
+ "module": "Cpro",
+ "name": "Restaurant Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 20.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "label": "POS Terminal",
+   "type": "URL",
+   "url": "/cpro"
+  },
+  {
+   "color": "Orange",
+   "label": "Kitchen Display (KDS)",
+   "type": "URL",
+   "url": "/cpro/kds"
+  },
+  {
+   "color": "Green",
+   "label": "Digital Menu",
+   "type": "URL",
+   "url": "/menu"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Open Shift",
+   "link_to": "Cpro POS Opening Shift",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Close Shift",
+   "link_to": "Cpro POS Closing Shift",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Tables & QR",
+   "link_to": "Cpro Table",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Restaurant Management",
+ "type": "Workspace"
+}

@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-08-20 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pos_invoice",
+  "table",
+  "customer",
+  "column_break_head",
+  "status",
+  "kitchen_station",
+  "order_time",
+  "notes_section",
+  "order_notes",
+  "items_section",
+  "items"
+ ],
+ "fields": [
+  {
+   "default": "KOT-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "KOT-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pos_invoice",
+   "fieldtype": "Link",
+   "label": "POS Invoice",
+   "options": "POS Invoice"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Table",
+   "options": "Cpro Table"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_head",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "New\nPreparing\nReady\nServed\nCancelled"
+  },
+  {
+   "fieldname": "kitchen_station",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Kitchen Station",
+   "options": "Cpro Kitchen Station"
+  },
+  {
+   "default": "Now",
+   "fieldname": "order_time",
+   "fieldtype": "Datetime",
+   "label": "Order Time"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Order Notes"
+  },
+  {
+   "fieldname": "order_notes",
+   "fieldtype": "Small Text",
+   "label": "Order Notes"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Cpro KOT Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cpro",
+ "name": "Cpro KOT",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Cashier",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Waiter",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Kitchen",
+   "select": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

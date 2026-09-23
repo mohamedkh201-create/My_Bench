@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-08-20 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pos_opening_shift",
+  "posting_date",
+  "column_break_head",
+  "period_start_datetime",
+  "period_end_datetime",
+  "pos_profile",
+  "company",
+  "user",
+  "status",
+  "totals_section",
+  "pos_invoice_count",
+  "total_quantity",
+  "column_break_totals",
+  "net_total",
+  "total_taxes_and_charges",
+  "grand_total",
+  "reconciliation_section",
+  "payment_reconciliation",
+  "notes_section",
+  "closing_notes"
+ ],
+ "fields": [
+  {
+   "default": "CPOS-CLOSE-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CPOS-CLOSE-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pos_opening_shift",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opening Shift",
+   "options": "Cpro POS Opening Shift",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_head",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pos_opening_shift.period_start_datetime",
+   "fieldname": "period_start_datetime",
+   "fieldtype": "Datetime",
+   "label": "Opened At",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "period_end_datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Closed At",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "pos_opening_shift.pos_profile",
+   "fieldname": "pos_profile",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "POS Profile",
+   "options": "POS Profile",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pos_opening_shift.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pos_opening_shift.user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cashier",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Summary"
+  },
+  {
+   "fieldname": "pos_invoice_count",
+   "fieldtype": "Int",
+   "label": "POS Invoices",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_totals",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "options": "company:company_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_taxes_and_charges",
+   "fieldtype": "Currency",
+   "label": "Total Taxes & Charges",
+   "options": "company:company_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "company:company_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reconciliation_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Reconciliation"
+  },
+  {
+   "description": "Expected is computed from this shift's paid POS Invoices; enter the counted amount to see the difference.",
+   "fieldname": "payment_reconciliation",
+   "fieldtype": "Table",
+   "label": "Payment Reconciliation",
+   "options": "Cpro POS Balance Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "closing_notes",
+   "fieldtype": "Small Text",
+   "label": "Closing Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cpro",
+ "name": "Cpro POS Closing Shift",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Cashier",
+   "select": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Waiter",
+   "select": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

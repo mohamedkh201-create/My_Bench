@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-08-20 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "company",
+  "default_selling_price_list",
+  "column_break_gen",
+  "currency",
+  "ordering_section",
+  "allow_guest_orders",
+  "enable_call_waiter",
+  "column_break_ord",
+  "kot_auto_create",
+  "taxes_section",
+  "enable_vat",
+  "vat_rate",
+  "column_break_tax",
+  "enable_service_charge",
+  "service_charge_rate",
+  "taxes_template_section",
+  "sales_taxes_and_charges_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "description": "Fallback price list when a customer has no dedicated price list.",
+   "fieldname": "default_selling_price_list",
+   "fieldtype": "Link",
+   "label": "Default Selling Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "column_break_gen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company.default_currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "ordering_section",
+   "fieldtype": "Section Break",
+   "label": "Ordering"
+  },
+  {
+   "default": "0",
+   "description": "Allow customers to order from the digital menu without an account.",
+   "fieldname": "allow_guest_orders",
+   "fieldtype": "Check",
+   "label": "Allow Guest Orders"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_call_waiter",
+   "fieldtype": "Check",
+   "label": "Enable Call Waiter"
+  },
+  {
+   "fieldname": "column_break_ord",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "description": "Automatically create a Kitchen Order Ticket when an order is placed.",
+   "fieldname": "kot_auto_create",
+   "fieldtype": "Check",
+   "label": "Auto-create KOT"
+  },
+  {
+   "fieldname": "taxes_section",
+   "fieldtype": "Section Break",
+   "label": "Taxes & Charges"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_vat",
+   "fieldtype": "Check",
+   "label": "Enable VAT"
+  },
+  {
+   "default": "14",
+   "depends_on": "enable_vat",
+   "fieldname": "vat_rate",
+   "fieldtype": "Percent",
+   "label": "VAT Rate (%)"
+  },
+  {
+   "fieldname": "column_break_tax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_service_charge",
+   "fieldtype": "Check",
+   "label": "Enable Service Charge"
+  },
+  {
+   "depends_on": "enable_service_charge",
+   "fieldname": "service_charge_rate",
+   "fieldtype": "Percent",
+   "label": "Service Charge Rate (%)"
+  },
+  {
+   "fieldname": "taxes_template_section",
+   "fieldtype": "Section Break",
+   "label": "Applied Template"
+  },
+  {
+   "description": "Sales Taxes and Charges Template applied to POS orders. Generated from the toggles above.",
+   "fieldname": "sales_taxes_and_charges_template",
+   "fieldtype": "Link",
+   "label": "Sales Taxes and Charges Template",
+   "options": "Sales Taxes and Charges Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cpro",
+ "name": "Cpro Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cpro Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
