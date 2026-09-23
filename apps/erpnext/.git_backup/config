@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/frappe/erpnext.git
+	fetch = +refs/heads/version-16:refs/remotes/origin/version-16
+[branch "version-16"]
+	remote = origin
+	merge = refs/heads/version-16
