@@ -1,0 +1,6 @@
+2026-06-23 14:29:05,702 WARNING database DDL Query made to DB:
+DROP DATABASE IF EXISTS `_f3ec4a8252e0c7b7`
+2026-06-23 14:29:05,711 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_f3ec4a8252e0c7b7'@'%'
+2026-06-23 14:29:05,713 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_f3ec4a8252e0c7b7'@'localhost'

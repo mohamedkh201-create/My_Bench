@@ -1,0 +1,402 @@
+2026-09-15 01:57:50,141 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 01:57:50,151 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 01:57:50,228 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 01:57:50,238 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 01:57:50,326 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 01:57:50,337 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.users.get_current_user_info'}
+2026-09-15 02:01:24,326 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:01:33,525 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:04:07,836 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:04:48,756 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:05:56,819 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:13:11,189 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:13:38,954 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:13:38,984 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:13:40,878 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:13:40,909 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:13:40,913 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.menu.get_menu'}
+2026-09-15 02:14:39,185 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:15:34,939 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:15:54,968 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:16:06,545 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:16:06,561 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:16:16,422 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:16,447 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:22,588 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:22,611 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:27,964 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:27,993 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:16:29,051 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:16:29,073 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:16:29,085 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.menu.get_menu'}
+2026-09-15 02:16:29,107 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.menu.get_menu'}
+2026-09-15 02:18:47,573 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00045', 'payment_reconciliation': [], 'closing_notes': 'Closed from frontend', 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-15 02:21:05,313 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00045', 'payment_reconciliation': [], 'closing_notes': 'Closed from frontend', 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-15 02:21:19,910 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 02:21:46,923 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00045', 'payment_reconciliation': [], 'closing_notes': 'Closed from frontend', 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-15 02:23:35,904 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:23:35,924 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:23:38,861 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:23:38,896 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:23:45,055 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:23:45,088 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:29:16,624 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:29:16,655 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name'], 'filters': '[["selling","=",1],["enabled","=",1]]', 'order_by': 'name asc', 'limit_page_length': '0'}
+2026-09-15 02:29:16,672 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer_name', 'default_price_list', 'mobile_no'], 'filters': '[]', 'order_by': 'modified desc', 'limit_page_length': '3'}
+2026-09-15 02:29:32,727 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:29:32,755 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:29:32,766 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:31:02,456 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:31:02,482 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:31:02,485 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:32:25,242 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:32:25,267 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:32:25,272 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:32:40,747 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:32:40,774 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:32:40,788 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:33:04,426 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:33:04,449 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:33:05,856 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:33:05,877 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:33:20,222 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:33:20,235 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:34:23,118 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:34:23,129 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:34:26,634 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:34:26,651 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-15 02:35:07,176 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:35:07,207 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:35:07,208 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:35:23,797 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:35:23,831 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'table_number', 'room', 'seating_capacity', 'status'], 'filters': '[["is_active","=",1]]', 'order_by': 'table_number asc', 'limit_page_length': '0'}
+2026-09-15 02:35:23,832 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.shift.get_current_shift'}
+2026-09-15 02:40:49,340 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:40:49,366 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-15 02:52:38,520 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'doc': '{"name":"Egypt Tax - MR","owner":"Administrator","creation":"2026-06-23 15:41:23.392589","modified":"2026-09-15 02:48:15.249402","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Egypt Tax","is_default":1,"disabled":0,"company":"my resturant","doctype":"Sales Taxes and Charges Template","taxes":[{"name":"tc1ce52s8c","owner":"Administrator","creation":"2026-06-23 15:41:23.392589","modified":"2026-09-15 02:48:15.249402","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"GST - MR","description":"GST @ 10.0","included_in_print_rate":0,"included_in_paid_amount":0,"set_by_item_tax_template":0,"is_tax_withholding_account":0,"cost_center":"Main - MR","rate":14,"net_amount":0,"tax_amount":0,"total":0,"tax_amount_after_discount_amount":0,"base_net_amount":0,"base_tax_amount":0,"base_total":0,"base_tax_amount_after_discount_amount":0,"dont_recompute_tax":0,"parent":"Egypt Tax - MR","parentfield":"taxes","parenttype":"Sales Taxes and Charges Template","doctype":"Sales Taxes and Charges"}],"__last_sync_on":"2026-09-14T23:49:25.394Z","__unsaved":1,"__needs_refresh":true}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-09-15 03:16:48,279 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:18:24,803 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:18:33,690 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:18:38,958 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:18:50,912 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:19:09,571 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:27:18,061 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 136.8, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:27:37,095 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 136.8, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:38:00,704 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 136.8, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:38:21,393 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 136.8, 'items': [{'item_code': 'pizza', 'qty': 1, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-15 03:43:49,669 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 03:44:41,416 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-15 03:45:24,236 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 273.6, 'items': [{'item_code': 'pizza', 'qty': 2, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-17 14:47:21,005 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'target_doctype': 'Cpro Table', 'data': '{"is_active":1,"table_number":"2","room":"الرجاله","name":"زز"}', 'cmd': 'cpro.api.management.save_dynamic_record'}
+2026-09-17 15:25:39,945 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 15:25:39,958 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 15:25:41,225 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 15:25:41,238 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 15:28:53,699 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.management.get_management_links'}
+2026-09-17 15:29:03,594 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.management.get_management_links'}
+2026-09-17 16:19:34,109 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:19:34,126 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:19:37,591 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:19:37,611 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:20:22,161 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:20:22,197 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:21:35,193 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00089', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-17 16:21:40,260 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00089', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-17 16:22:02,225 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_profile': 'zed', 'balance_details': [{'mode_of_payment': 'Cash', 'opening_amount': 0}], 'cmd': 'cpro.api.shift.open_shift'}
+2026-09-17 16:22:25,146 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:22:25,183 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:22:28,814 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00089', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-17 16:22:33,631 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00089', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-17 16:22:40,358 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00089', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-17 16:22:49,137 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:22:49,166 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'fields': ['name', 'customer', 'customer_name', 'posting_date', 'posting_time', 'grand_total', 'status', 'docstatus', 'pos_profile'], 'order_by': 'creation desc', 'limit_page_length': '100'}
+2026-09-17 16:22:59,479 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 16:22:59,494 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-17 16:23:30,308 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'target_doctype': 'POS Profile', 'fields': '["company","customer","country","disabled","warehouse","company_address","payments","set_grand_total_to_default_mop","currency","selling_price_list","write_off_account","write_off_cost_center","write_off_limit","income_account","expense_account","taxes_and_charges","tax_category","account_for_change_amount","disable_rounded_total","apply_discount_on","allow_partial_payment","cost_center","project","action_on_new_invoice","validate_stock_on_save","update_stock","ignore_pricing_rule","print_receipt_on_order_complete","hide_images","hide_unavailable_items","auto_add_item_to_cart","allow_rate_change","allow_discount_change","restaurant_prefix","applicable_for_users","item_groups","customer_groups","print_format","letter_head","tc_name","select_print_heading","utm_source","utm_campaign","utm_medium","custom_reprint_kot_format","custom_table_order_printer","custom_parcel_order_printer","custom_enable_kot_reprint","custom_notify_kot_delay","custom_reset_order_number_daily","custom_kot_warning_time","custom_kot_alert_sound","custom_kot_alert","custom_kot_naming_series","custom_enable_multiple_cashier","custom_edit_order_type","custom_enable_discount","custom_daily_pos_close","show_image","remove_items","view_all_status","paid_limit","table_attention_time","qz_host","qz_print","branch"]', 'cmd': 'cpro.api.management.get_dynamic_records'}
+2026-09-17 16:23:30,321 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'target_doctype': 'POS Profile', 'fields': '["company","customer","country","disabled","warehouse","company_address","payments","set_grand_total_to_default_mop","currency","selling_price_list","write_off_account","write_off_cost_center","write_off_limit","income_account","expense_account","taxes_and_charges","tax_category","account_for_change_amount","disable_rounded_total","apply_discount_on","allow_partial_payment","cost_center","project","action_on_new_invoice","validate_stock_on_save","update_stock","ignore_pricing_rule","print_receipt_on_order_complete","hide_images","hide_unavailable_items","auto_add_item_to_cart","allow_rate_change","allow_discount_change","restaurant_prefix","applicable_for_users","item_groups","customer_groups","print_format","letter_head","tc_name","select_print_heading","utm_source","utm_campaign","utm_medium","custom_reprint_kot_format","custom_table_order_printer","custom_parcel_order_printer","custom_enable_kot_reprint","custom_notify_kot_delay","custom_reset_order_number_daily","custom_kot_warning_time","custom_kot_alert_sound","custom_kot_alert","custom_kot_naming_series","custom_enable_multiple_cashier","custom_edit_order_type","custom_enable_discount","custom_daily_pos_close","show_image","remove_items","view_all_status","paid_limit","table_attention_time","qz_host","qz_print","branch"]', 'cmd': 'cpro.api.management.get_dynamic_records'}
+2026-09-23 14:07:16,871 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-23 14:07:16,882 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-23 14:07:20,443 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-23 14:07:20,453 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'cmd': 'cpro.api.inventory.get_inventory_list'}
+2026-09-23 14:08:11,370 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00091', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-23 14:09:56,663 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00091', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-23 14:10:06,538 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00091', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-23 14:10:19,114 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'invoice_name': 'ACC-PSINV-2026-00091', 'mode_of_payment': 'Cash', 'cmd': 'cpro.api.pos.pay_order'}
+2026-09-23 14:19:45,067 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 410.4, 'items': [{'item_code': 'pizza', 'qty': 3, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-23 14:19:57,096 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 547.2, 'items': [{'item_code': 'pizza', 'qty': 4, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-23 14:20:04,077 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 547.2, 'items': [{'item_code': 'pizza', 'qty': 4, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-23 14:20:19,850 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'order': {'pos_profile': 'zed', 'customer': 'زبون عادي', 'order_type': 'Take Away', 'table': '', 'print_invoice': 1, 'grand_total': 547.2, 'items': [{'item_code': 'pizza', 'qty': 4, 'rate': 120}]}, 'cmd': 'cpro.api.pos.save_order'}
+2026-09-23 14:23:31,818 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-23 14:23:47,246 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-23 14:24:00,131 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-23 14:26:49,363 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-23 14:28:48,050 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}
+2026-09-23 14:32:01,339 ERROR frappe New Exception collected in error log
+Site: my_resturant
+Form Dict: {'pos_opening_shift': 'POS-OPE-2026-00083', 'payment_reconciliation': [{'mode_of_payment': 'Cash', 'opening_amount': 1000, 'closing_amount': 2000}], 'closing_notes': None, 'cmd': 'cpro.api.shift.close_shift'}

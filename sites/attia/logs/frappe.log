@@ -1,0 +1,39 @@
+2026-06-21 14:35:04,714 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Customer","name":"new-customer-kngxsikvtd","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CUST-.YYYY.-","customer_type":"Company","accounts":[],"credit_limits":[],"is_internal_customer":0,"companies":[],"so_required":0,"dn_required":0,"disabled":0,"is_frozen":0,"sales_team":[],"portal_users":[],"language":"en","supplier_numbers":[],"__run_link_triggers":1,"customer_name":"محمد للتجارة","address_line1":"Ash sharqia , Hehia , gomhoria","address_line2":"hehia","pincode":"44741","city":"Hihya","state":"hehia","email_id":"a@gmail.com","mobile_no":"121212","first_name":"mohamed","last_name":"ahmed","country":"Egypt","map_to_first_name":"mohamed","map_to_last_name":"ahmed","email_address":"a@gmail.com","mobile_number":"121212","country_address":"Egypt"}', 'cmd': 'frappe.client.save'}
+2026-06-21 15:40:30,175 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'posting_date': '2026-06-21', 'party': 'aaaaaaaa', 'party_type': 'Customer', 'price_list': 'Standard Selling', 'currency': 'EGP', 'company': 'attia', 'doctype': 'POS Invoice', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2026-06-21 17:28:19,995 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doctype': 'Customer', 'name': 'aaaaaaaa', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-06-21 17:28:47,498 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doctype': 'Customer', 'name': 'aaaaaaaa', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-06-21 17:29:43,254 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doctype': 'Customer', 'name': 'aaaaaaaa', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-06-21 17:51:28,563 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doctype': 'Customer', 'name': 'aaaaaaaa', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-06-21 17:52:31,952 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Customer","name":"new-customer-gltxzuztcm","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CUST-.YYYY.-","customer_type":"Company","accounts":[],"credit_limits":[],"is_internal_customer":0,"companies":[],"so_required":0,"dn_required":0,"disabled":0,"is_frozen":0,"sales_team":[],"portal_users":[],"language":"en","supplier_numbers":[],"represents_company":"","customer_name":"محمود"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-06-21 17:52:37,153 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Customer","name":"new-customer-gltxzuztcm","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CUST-.YYYY.-","customer_type":"Company","accounts":[],"credit_limits":[],"is_internal_customer":0,"companies":[],"so_required":0,"dn_required":0,"disabled":0,"is_frozen":0,"sales_team":[],"portal_users":[],"language":"en","supplier_numbers":[],"represents_company":"","customer_name":"محمود"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-06-21 17:53:11,693 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Customer","name":"new-customer-gltxzuztcm","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CUST-.YYYY.-","customer_type":"Company","accounts":[],"credit_limits":[],"is_internal_customer":0,"companies":[],"so_required":0,"dn_required":0,"disabled":0,"is_frozen":0,"sales_team":[],"portal_users":[],"language":"en","supplier_numbers":[],"represents_company":"","customer_name":"محمود","customer_group":"Government","territory":"Egypt","default_currency":"EGP","default_price_list":"Standard Selling","default_bank_account":""}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 18:42:51,573 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'name': 'ury', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 18:53:52,442 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'name': 'ury', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 18:54:54,049 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'name': 'ury', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 18:59:36,135 ERROR frappe New Exception collected in error log
+Site: attia
+Form Dict: {'name': 'ury', 'cmd': 'frappe.desk.desk_page.getpage'}

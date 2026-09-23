@@ -1,0 +1,1954 @@
+2026-06-20 21:01:37,275 DEBUG cd my-bench && uv venv env --seed --python python3
+2026-06-20 21:01:38,696 LOG Getting frappe
+2026-06-20 21:01:38,696 DEBUG cd my-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2026-06-20 21:01:47,157 LOG Installing frappe
+2026-06-20 21:01:47,158 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-20 21:02:13,356 WARNING cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python executed with exit code 1
+2026-06-20 21:02:13,357 WARNING /home/mahmoud/.local/bin/bench init my-bench executed with exit code 167
+2026-06-20 21:04:03,547 INFO /home/mahmoud/.local/bin/bench get-app erpnext
+2026-06-20 21:04:04,971 LOG Getting erpnext
+2026-06-20 21:04:04,971 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2026-06-20 21:04:17,499 LOG Installing erpnext
+2026-06-20 21:04:17,499 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/erpnext  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-20 21:04:29,570 DEBUG cd /home/mahmoud/frappe/my-bench/apps/erpnext && yarn install --check-files
+2026-06-20 21:29:53,432 INFO /home/mahmoud/.local/bin/bench new-site attia
+2026-06-20 21:31:57,283 INFO /home/mahmoud/.local/bin/bench get-app frappe
+2026-06-20 21:32:09,968 INFO App moved from apps/frappe to archived/apps/frappe-2026-06-20
+2026-06-20 21:32:09,974 LOG Getting frappe
+2026-06-20 21:32:09,974 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch develop --depth 1 --origin upstream
+2026-06-20 21:32:18,651 LOG Installing frappe
+2026-06-20 21:32:18,654 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-20 21:32:22,306 WARNING cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python executed with exit code 1
+2026-06-20 21:32:22,306 WARNING /home/mahmoud/.local/bin/bench get-app frappe executed with exit code 167
+2026-06-20 21:37:42,152 INFO /home/mahmoud/.local/bin/bench get-app frappe
+2026-06-20 21:37:58,758 INFO App moved from apps/frappe to archived/apps/frappe-2026-06-20_1
+2026-06-20 21:37:58,763 LOG Getting frappe
+2026-06-20 21:37:58,763 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch develop --depth 1 --origin upstream
+2026-06-20 21:38:11,100 LOG Installing frappe
+2026-06-20 21:38:11,102 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-20 21:38:29,997 DEBUG cd /home/mahmoud/frappe/my-bench/apps/frappe && yarn install --check-files
+2026-06-20 21:39:48,539 DEBUG bench build --app frappe
+2026-06-20 21:39:48,669 INFO /home/mahmoud/.local/bin/bench build --app frappe
+2026-06-20 21:41:16,736 INFO /home/mahmoud/.local/bin/bench new-site attia
+2026-06-20 21:43:26,948 INFO /home/mahmoud/.local/bin/bench new-site attia
+2026-06-20 21:43:47,116 INFO /home/mahmoud/.local/bin/bench new-site attia
+2026-06-20 21:46:49,311 INFO /home/mahmoud/.local/bin/bench --site attia install-app erpnext
+2026-06-20 21:49:41,476 INFO /home/mahmoud/.local/bin/bench --site attia install-app erpnext
+2026-06-20 21:50:06,535 INFO /home/mahmoud/.local/bin/bench start
+2026-06-20 21:51:19,862 INFO /home/mahmoud/.local/bin/bench start
+2026-06-20 21:51:20,567 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-20 21:51:20,586 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-20 21:51:20,591 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-20 21:51:20,594 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-20 21:51:20,601 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-20 21:54:37,395 INFO /home/mahmoud/.local/bin/bench use attia
+2026-06-20 21:54:50,756 INFO /home/mahmoud/.local/bin/bench start
+2026-06-20 21:54:51,177 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-20 21:54:51,188 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-20 21:54:51,190 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-20 21:54:51,192 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-20 21:54:51,192 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-20 22:00:19,155 INFO /home/mahmoud/.local/bin/bench start
+2026-06-20 22:00:19,708 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-20 22:00:19,730 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-20 22:00:19,738 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-20 22:00:19,740 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-20 22:00:19,742 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-20 22:00:34,992 INFO /home/mahmoud/.local/bin/bench start
+2026-06-20 22:00:35,507 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-20 22:00:35,516 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-20 22:00:35,516 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-20 22:00:35,523 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-20 22:00:35,524 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-20 22:01:59,297 INFO /home/mahmoud/.local/bin/bench new-app sayed
+2026-06-20 22:01:59,309 LOG creating new app sayed
+2026-06-20 22:02:09,486 WARNING /home/mahmoud/.local/bin/bench new-app sayed executed with exit code 1
+2026-06-21 13:38:28,438 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 13:38:28,868 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 13:38:28,870 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 13:38:28,877 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 13:38:28,879 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 13:38:28,883 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 13:41:59,300 INFO /home/mahmoud/.local/bin/bench build
+2026-06-21 14:10:54,730 INFO /home/mahmoud/.local/bin/bench build
+2026-06-21 14:11:26,427 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 14:11:26,997 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 14:11:27,002 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 14:11:27,023 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 14:11:27,026 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 14:11:27,031 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 14:37:25,761 INFO /home/mahmoud/.local/bin/bench new-site attia
+2026-06-21 14:37:38,058 INFO /home/mahmoud/.local/bin/bench use attia
+2026-06-21 14:37:44,450 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 14:38:03,678 INFO /home/mahmoud/.local/bin/bench --site attia delete-doc Customer new-customer-kngxsikvtd
+2026-06-21 15:42:06,253 INFO /home/mahmoud/.local/bin/bench new-app attia
+2026-06-21 15:42:06,262 LOG creating new app attia
+2026-06-21 15:42:06,891 WARNING /home/mahmoud/.local/bin/bench new-app attia executed with exit code 1
+2026-06-21 15:42:22,764 INFO /home/mahmoud/.local/bin/bench new-app first-app
+2026-06-21 15:42:22,773 LOG creating new app first_app
+2026-06-21 15:43:39,474 LOG Installing first_app
+2026-06-21 15:43:39,475 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/first_app  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-21 15:43:40,391 DEBUG bench build --app first_app
+2026-06-21 15:43:40,517 INFO /home/mahmoud/.local/bin/bench build --app first_app
+2026-06-21 15:57:10,521 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 15:57:10,871 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 15:57:10,879 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 15:57:10,891 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 15:57:10,892 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 15:57:10,902 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 16:06:24,019 INFO /home/mahmoud/.local/bin/bench --site attia install-app first_app
+2026-06-21 16:09:22,954 INFO /home/mahmoud/.local/bin/bench developer_mode 1
+2026-06-21 16:11:23,900 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 16:37:44,380 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 16:37:44,797 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 16:37:44,798 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 16:37:44,804 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 16:37:44,804 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 16:37:44,810 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 17:28:08,332 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 17:28:08,776 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 17:28:08,782 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 17:28:08,791 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 17:28:08,797 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 17:28:08,806 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 17:54:55,112 INFO /home/mahmoud/.local/bin/bench build
+2026-06-21 17:55:19,401 INFO /home/mahmoud/.local/bin/bench restart
+2026-06-21 17:55:37,108 INFO /home/mahmoud/.local/bin/bench start
+2026-06-21 17:55:37,548 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-21 17:55:37,555 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-21 17:55:37,559 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-21 17:55:37,559 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-21 17:55:37,561 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-21 18:01:25,177 INFO /home/mahmoud/.local/bin/bench new-doctype Customer
+2026-06-21 18:04:28,714 INFO /home/mahmoud/.local/bin/bench make-doctype Customer --app first_app
+2026-06-21 18:05:59,156 INFO /home/mahmoud/.local/bin/bench --help
+2026-06-23 13:52:45,202 INFO /home/mahmoud/.local/bin/bench new-site my_resturant
+2026-06-23 13:53:21,604 INFO /home/mahmoud/.local/bin/bench new-site my_resturant
+2026-06-23 14:07:54,190 INFO /home/mahmoud/.local/bin/bench drop-site my_resturant --force
+2026-06-23 14:08:16,456 INFO /home/mahmoud/.local/bin/bench drop-site my_resturant --force
+2026-06-23 14:09:05,617 INFO /home/mahmoud/.local/bin/bench drop-site my_resturant --force
+2026-06-23 14:28:49,953 INFO /home/mahmoud/.local/bin/bench drop-site my_resturant --force
+2026-06-23 14:53:13,372 INFO /home/mahmoud/.local/bin/bench new-site my_resturant
+2026-06-23 15:01:46,567 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app erpnext
+2026-06-23 15:08:14,696 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app erpnext
+2026-06-23 15:08:29,594 INFO /home/mahmoud/.local/bin/bench start
+2026-06-23 15:08:29,988 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-23 15:08:29,988 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-23 15:08:29,992 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-23 15:08:29,992 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-23 15:08:30,001 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-23 15:17:08,204 INFO /home/mahmoud/.local/bin/bench sites
+2026-06-23 15:23:45,469 INFO /home/mahmoud/.local/bin/bench set-default-site my_resturant
+2026-06-23 15:26:27,921 INFO /home/mahmoud/.local/bin/bench use my_resturant
+2026-06-23 15:26:51,002 INFO /home/mahmoud/.local/bin/bench start
+2026-06-23 15:26:51,385 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-23 15:26:51,386 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-23 15:26:51,386 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-23 15:26:51,388 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-23 15:26:51,390 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-23 15:37:00,655 INFO /home/mahmoud/.local/bin/bench set-admin-password 123456
+2026-06-23 15:37:06,360 INFO /home/mahmoud/.local/bin/bench start
+2026-06-23 15:37:06,727 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-23 15:37:06,728 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-23 15:37:06,730 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-23 15:37:06,734 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-23 15:37:06,735 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-23 15:40:05,653 INFO /home/mahmoud/.local/bin/bench build
+2026-06-23 15:40:33,679 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-23 15:40:42,904 INFO /home/mahmoud/.local/bin/bench start
+2026-06-23 15:40:43,284 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-23 15:40:43,291 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-23 15:40:43,292 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-23 15:40:43,300 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-23 15:40:43,312 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-23 15:49:50,306 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app restaurant_app
+2026-06-23 15:50:45,280 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app my_res_app
+2026-06-23 15:51:34,472 INFO /home/mahmoud/.local/bin/bench new-app restaurant_app
+2026-06-23 15:51:34,483 LOG creating new app restaurant_app
+2026-06-23 15:53:07,219 LOG Installing restaurant_app
+2026-06-23 15:53:07,220 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/restaurant_app  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-23 15:53:08,182 DEBUG bench build --app restaurant_app
+2026-06-23 15:53:08,319 INFO /home/mahmoud/.local/bin/bench build --app restaurant_app
+2026-06-23 15:53:28,752 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app restaurant_app
+2026-06-23 15:53:37,064 INFO /home/mahmoud/.local/bin/bench start
+2026-06-23 15:53:37,410 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-23 15:53:37,425 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-23 15:53:37,434 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-23 15:53:37,437 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-23 15:53:37,441 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-24 13:30:53,979 INFO /home/mahmoud/.local/bin/bench build
+2026-06-24 13:31:49,868 INFO /home/mahmoud/.local/bin/bench start
+2026-06-24 13:31:50,434 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-24 13:31:50,437 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-24 13:31:50,438 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-24 13:31:50,440 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-24 13:31:50,458 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-24 14:06:44,841 INFO /home/mahmoud/.local/bin/bench config server_script_enabled true
+2026-06-24 14:06:44,852 WARNING /home/mahmoud/.local/bin/bench config server_script_enabled true executed with exit code 2
+2026-06-24 14:07:11,505 INFO /home/mahmoud/.local/bin/bench start
+2026-06-24 14:07:11,947 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-24 14:07:11,954 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-24 14:07:11,956 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-24 14:07:11,958 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-24 14:07:11,965 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-24 14:09:28,569 INFO /home/mahmoud/.local/bin/bench set-config -g server_script_enabled 1
+2026-06-24 14:09:51,907 INFO /home/mahmoud/.local/bin/bench start
+2026-06-24 14:09:52,258 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-24 14:09:52,269 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-24 14:09:52,273 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-24 14:09:52,277 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-24 14:09:52,281 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-24 17:40:08,562 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-24 17:40:31,427 INFO /home/mahmoud/.local/bin/bench --site [my_resturant] migrate
+2026-06-24 17:41:45,417 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-06-24 17:42:22,078 INFO /home/mahmoud/.local/bin/bench start
+2026-06-24 17:42:22,475 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-24 17:42:22,476 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-24 17:42:22,479 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-24 17:42:22,485 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-24 17:42:22,498 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-24 17:42:33,420 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-06-24 17:44:18,606 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-cache
+2026-06-24 17:46:28,899 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute erpnext.setup.install.create_address_and_contact_custom_fields
+2026-06-24 17:46:59,081 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-cache
+2026-06-24 18:58:12,736 INFO /home/mahmoud/.local/bin/bench start
+2026-06-24 18:58:13,555 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-24 18:58:13,570 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-24 18:58:13,618 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-24 18:58:13,668 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-24 18:58:13,814 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 14:29:20,871 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop
+2026-06-25 14:29:20,890 LOG Getting Frappe-Foodiex
+2026-06-25 14:29:20,890 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop --depth 1 --origin upstream
+2026-06-25 14:32:48,941 WARNING cd ./apps && git clone https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop --depth 1 --origin upstream executed with exit code 128
+2026-06-25 14:32:48,942 WARNING /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop executed with exit code 1
+2026-06-25 14:32:55,519 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop
+2026-06-25 14:32:55,539 LOG Getting Frappe-Foodiex
+2026-06-25 14:32:55,540 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop --depth 1 --origin upstream
+2026-06-25 14:33:33,005 WARNING cd ./apps && git clone https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop --depth 1 --origin upstream executed with exit code 128
+2026-06-25 14:33:33,005 WARNING /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Frappe-Foodiex --branch develop executed with exit code 1
+2026-06-25 14:33:53,301 INFO /home/mahmoud/.local/bin/bench install-app foodiex
+2026-06-25 14:35:10,379 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Frappe-Foodiex
+2026-06-25 14:35:10,393 LOG Getting Frappe-Foodiex
+2026-06-25 14:35:10,393 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/Frappe-Foodiex  --depth 1 --origin upstream
+2026-06-25 14:35:12,409 LOG Installing foodiex
+2026-06-25 14:35:12,409 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/foodiex  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-06-25 14:35:13,340 DEBUG bench build --app foodiex
+2026-06-25 14:35:13,482 INFO /home/mahmoud/.local/bin/bench build --app foodiex
+2026-06-25 14:35:34,333 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app foodiex
+2026-06-25 14:36:51,427 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-06-25 14:37:32,640 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 14:37:33,114 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 14:37:33,127 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 14:37:33,134 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 14:37:33,138 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 14:37:33,138 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:22:25,198 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 16:22:35,694 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 16:23:57,362 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:23:57,797 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:23:57,804 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:23:57,808 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:23:57,811 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:23:57,814 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:24:07,111 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 16:34:35,280 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:35:52,203 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:36:49,179 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:38:34,548 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:38:35,280 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:38:35,307 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:38:35,311 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:38:35,317 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:38:35,332 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:46:16,806 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:46:17,385 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:46:17,400 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:46:17,401 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:46:17,402 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:46:17,422 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:47:01,095 INFO /home/mahmoud/.local/bin/bench restart
+2026-06-25 16:47:06,000 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:47:06,332 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:47:06,333 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:47:06,344 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:47:06,349 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:47:06,350 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:48:45,063 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:48:45,445 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:48:45,447 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:48:45,450 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:48:45,455 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:48:45,468 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:53:02,693 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 16:53:16,389 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 16:53:16,896 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 16:53:16,903 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 16:53:16,903 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 16:53:16,905 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 16:53:16,913 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 16:53:25,374 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 19:39:12,107 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:39:12,513 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 19:39:12,514 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 19:39:12,524 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 19:39:12,530 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 19:39:12,533 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 19:51:15,239 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 19:51:41,256 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:52:53,855 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:52:54,359 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 19:52:54,366 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 19:52:54,369 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 19:52:54,375 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 19:52:54,386 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 19:55:35,670 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 19:55:40,799 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:55:41,224 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 19:55:41,225 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 19:55:41,226 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 19:55:41,232 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 19:55:41,235 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 19:55:48,193 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 19:58:16,838 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-25 19:58:20,780 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:58:21,196 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 19:58:21,207 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 19:58:21,207 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 19:58:21,216 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 19:58:21,227 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 19:58:51,966 INFO /home/mahmoud/.local/bin/bench build
+2026-06-25 19:59:13,652 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 19:59:13,993 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 19:59:14,004 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 19:59:14,007 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 19:59:14,012 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 19:59:14,013 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 20:07:22,256 INFO /home/mahmoud/.local/bin/bench start
+2026-06-25 20:07:22,627 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-25 20:07:22,636 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-25 20:07:22,638 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-25 20:07:22,647 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-25 20:07:22,648 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-25 20:08:59,738 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-26 15:22:13,630 INFO /home/mahmoud/.local/bin/bench start
+2026-06-26 15:22:14,091 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-26 15:22:14,094 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-26 15:22:14,095 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-26 15:22:14,110 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-26 15:22:14,112 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-26 16:20:07,343 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-26 16:21:33,733 INFO /home/mahmoud/.local/bin/bench migrate
+2026-06-26 16:33:20,416 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-26 16:39:42,096 INFO /home/mahmoud/.local/bin/bench start
+2026-06-26 16:39:42,492 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-26 16:39:42,497 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-26 16:39:42,504 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-26 16:39:42,506 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-26 16:39:42,512 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-26 16:44:02,610 INFO /home/mahmoud/.local/bin/bench build --app foodiex
+2026-06-26 16:44:13,547 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-26 16:50:54,449 INFO /home/mahmoud/.local/bin/bench build --app foodiex
+2026-06-26 16:51:02,275 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-27 16:36:08,783 INFO /home/mahmoud/.local/bin/bench start
+2026-06-27 16:36:09,247 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-27 16:36:09,247 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-27 16:36:09,247 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-27 16:36:09,247 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-27 16:36:09,266 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-27 16:37:06,738 INFO /home/mahmoud/.local/bin/bench start
+2026-06-27 16:41:34,726 INFO /home/mahmoud/.local/bin/bench build --app foodiex
+2026-06-27 16:41:39,586 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-27 18:58:27,787 INFO /home/mahmoud/.local/bin/bench start
+2026-06-27 18:58:28,351 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-27 18:58:28,357 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-27 18:58:28,362 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-27 18:58:28,365 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-27 18:58:28,365 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-27 19:05:47,468 INFO /home/mahmoud/.local/bin/bench start
+2026-06-27 19:05:47,919 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-27 19:05:47,925 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-27 19:05:47,928 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-27 19:05:47,937 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-27 19:05:47,938 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-27 20:38:41,721 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-27 20:38:46,937 INFO /home/mahmoud/.local/bin/bench setup client-assets
+2026-06-27 20:38:46,978 WARNING /home/mahmoud/.local/bin/bench setup client-assets executed with exit code 2
+2026-06-27 20:39:18,504 INFO /home/mahmoud/.local/bin/bench build --app foodiex
+2026-06-27 20:40:37,891 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-06-27 20:52:14,724 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-27 20:56:39,131 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-27 21:11:44,883 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-28 17:06:31,226 INFO /home/mahmoud/.local/bin/bench start
+2026-06-28 17:06:31,666 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-28 17:06:31,671 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-28 17:06:31,673 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-28 17:06:31,673 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-28 17:06:31,674 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-28 17:36:04,700 INFO /home/mahmoud/.local/bin/bench start
+2026-06-28 17:36:05,173 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-28 17:36:05,174 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-28 17:36:05,183 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-28 17:36:05,191 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-28 17:36:05,194 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-28 18:03:25,762 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-28 18:08:36,724 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 15:30:53,211 INFO /home/mahmoud/.local/bin/bench start
+2026-06-29 15:30:53,765 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-29 15:30:53,771 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-29 15:30:53,777 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-29 15:30:53,777 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-29 15:30:53,780 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-29 18:35:44,928 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 18:39:48,717 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 18:41:15,408 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 18:44:55,635 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 18:54:34,563 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 18:59:46,524 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Restaurant Table', pluck='name')
+2026-06-29 19:00:05,508 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Item', pluck='name')
+2026-06-29 19:00:27,392 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Item', fields=['name', 'item_name', 'item_code'])
+2026-06-29 19:00:38,109 INFO /home/mahmoud/.local/bin/bench --site attia execute frappe.get_all('Item', fields=['name', 'item_name', 'item_code'])
+2026-06-29 19:00:56,105 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Item Group', pluck='name')
+2026-06-29 19:01:07,080 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('UOM', pluck='name')
+2026-06-29 19:01:42,809 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print('\n'.join([str(d.get('method') or '') + ' | ' + str(d.get('error') or '')[:500] for d in frappe.get_all('Error Log', fields=['method', 'error'], order_by='creation desc', limit=5)]))
+2026-06-29 19:02:12,937 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print('\n'.join([str(d.creation) + ' | ' + str(d.error)[:100] for d in frappe.get_all('Error Log', fields=['creation', 'error'], order_by='creation desc', limit=10)]))
+2026-06-29 19:02:24,162 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print(frappe.get_meta('Item').autoname)
+2026-06-29 19:03:48,196 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute import json; print(json.dumps(frappe.get_doc('Item', 'or-002').as_dict(), indent=2, default=str))
+2026-06-29 19:03:57,229 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_doc('Item', 'or-002').as_dict()
+2026-06-29 19:04:08,053 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute 
+import frappe
+if not frappe.db.exists('Restaurant Table', 'Table 1'):
+    t = frappe.get_doc({'doctype': 'Restaurant Table', 'table_number': 'Table 1', 'status': 'Available', 'capacity': 4})
+    t.insert(ignore_permissions=True)
+    frappe.db.commit()
+
+items = [
+    'برجر لحمة دوبل (Double Burger)',
+    'برجر فراخ مقرمش (Chicken Burger)',
+    'بيتزا بيتزا رانش (Chicken Ranch Pizza)',
+    'بيتزا مارجريتا (Margherita Pizza)',
+    'قهوة إسبريسو (Espresso)',
+    'لاتيه كافيه (Café Latte)',
+    'موجيتو ليمون نعناع (Mojito)',
+    'عصير مانجو طبيعي (Mango Juice)'
+]
+for item_name in items:
+    if not frappe.db.exists('Item', item_name):
+        doc = frappe.get_doc({
+            'doctype': 'Item',
+            'item_code': item_name,
+            'item_name': item_name,
+            'item_group': 'Consumable',
+            'stock_uom': 'Nos',
+            'is_stock_item': 1,
+            'is_sales_item': 1,
+            'is_purchase_item': 1
+        })
+        doc.append('item_defaults', {
+            'company': 'my resturant',
+            'default_warehouse': 'Stores - MR'
+        })
+        doc.insert(ignore_permissions=True)
+        frappe.db.commit()
+
+2026-06-29 19:04:19,125 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute exec("""
+if not frappe.db.exists('Restaurant Table', 'Table 1'):
+    t = frappe.get_doc({'doctype': 'Restaurant Table', 'table_number': 'Table 1', 'status': 'Available', 'capacity': 4})
+    t.insert(ignore_permissions=True)
+    frappe.db.commit()
+
+items = [
+    'برجر لحمة دوبل (Double Burger)',
+    'برجر فراخ مقرمش (Chicken Burger)',
+    'بيتزا بيتزا رانش (Chicken Ranch Pizza)',
+    'بيتزا مارجريتا (Margherita Pizza)',
+    'قهوة إسبريسو (Espresso)',
+    'لاتيه كافيه (Café Latte)',
+    'موجيتو ليمون نعناع (Mojito)',
+    'عصير مانجو طبيعي (Mango Juice)'
+]
+for item_name in items:
+    if not frappe.db.exists('Item', item_name):
+        doc = frappe.get_doc({
+            'doctype': 'Item',
+            'item_code': item_name,
+            'item_name': item_name,
+            'item_group': 'Consumable',
+            'stock_uom': 'Nos',
+            'is_stock_item': 1,
+            'is_sales_item': 1,
+            'is_purchase_item': 1
+        })
+        doc.append('item_defaults', {
+            'company': 'my resturant',
+            'default_warehouse': 'Stores - MR'
+        })
+        doc.insert(ignore_permissions=True)
+        frappe.db.commit()
+""")
+2026-06-29 19:06:00,967 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Item', filters={'item_group': 'Consumable'}, pluck='name')
+2026-06-29 19:06:11,271 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.db.exists('Restaurant Table', 'Table 1')
+2026-06-29 19:06:35,023 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Company', pluck='name')
+2026-06-29 19:08:00,778 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute from frappe.utils import now_datetime, add_to_date; print([d.as_dict() for d in frappe.get_all('Error Log', fields=['creation', 'error', 'method'], filters={'creation': ['>', add_to_date(now_datetime(), minutes=-5)]})])
+2026-06-29 19:08:24,609 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute exec("""
+from frappe.utils import now_datetime, add_to_date
+import json
+print(json.dumps([d.as_dict() for d in frappe.get_all('Error Log', fields=['creation', 'error', 'method'], filters={'creation': ['>', add_to_date(now_datetime(), minutes=-5)]})]))
+""")
+2026-06-29 19:09:30,908 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_all('Error Log', fields=['creation', 'error'], order_by='creation desc', limit=3)
+2026-06-29 19:09:41,078 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print(frappe.get_doc('Server Script', 'Update Table Status').script)
+2026-06-29 19:09:57,438 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print([(d.name, d.creation) for d in frappe.get_all('Error Log', order_by='creation desc', limit=3)])
+2026-06-29 19:10:18,955 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute print([(d.name, d.creation) for d in frappe.get_all('Error Log', fields=['name', 'creation'], order_by='creation desc', limit=5)])
+2026-06-29 19:10:30,803 INFO /home/mahmoud/.local/bin/bench --site my_resturant execute frappe.get_doc({'doctype': 'Restaurant Order', 'table': 'Table 1', 'order_status': 'Kitchen', 'items': [{'item_name': 'برجر لحمة دوبل (Double Burger)', 'qty': 1, 'rate': 150}]}).insert()
+2026-06-29 19:12:28,304 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 19:15:11,532 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 19:29:37,295 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 19:35:31,748 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 19:36:27,789 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-29 19:48:00,133 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 17:55:06,323 INFO /home/mahmoud/.local/bin/bench start
+2026-06-30 17:55:06,794 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-06-30 17:55:06,799 INFO /home/mahmoud/.local/bin/bench socketio
+2026-06-30 17:55:06,806 INFO /home/mahmoud/.local/bin/bench schedule
+2026-06-30 17:55:06,808 INFO /home/mahmoud/.local/bin/bench watch
+2026-06-30 17:55:06,811 INFO /home/mahmoud/.local/bin/bench worker
+2026-06-30 17:55:32,530 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 18:06:50,747 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 18:07:52,586 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 18:09:12,180 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 18:09:52,710 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 18:10:58,547 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 20:06:11,238 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-06-30 20:06:58,213 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-07-01 17:03:42,192 INFO /home/mahmoud/.local/bin/bench start
+2026-07-01 17:03:42,632 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-01 17:03:42,642 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-01 17:03:42,643 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-01 17:03:42,646 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-01 17:03:42,665 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-01 17:11:41,787 INFO /home/mahmoud/.local/bin/bench start
+2026-07-01 17:11:42,166 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-01 17:11:42,169 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-01 17:11:42,171 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-01 17:11:42,176 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-01 17:11:42,196 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-01 17:13:14,693 INFO /home/mahmoud/.local/bin/bench build --app foodiex --force
+2026-07-04 13:59:13,721 INFO /home/mahmoud/.local/bin/bench start
+2026-07-04 13:59:14,445 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-04 13:59:14,455 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-04 13:59:14,455 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-04 13:59:14,467 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-04 13:59:14,486 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-07 15:40:07,062 INFO /home/mahmoud/.local/bin/bench start
+2026-07-07 15:40:07,679 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-07 15:40:07,681 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-07 15:40:07,688 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-07 15:40:07,696 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-07 15:40:07,704 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-07 16:28:19,564 INFO /home/mahmoud/.local/bin/bench start
+2026-07-07 16:28:20,269 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-07 16:28:20,273 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-07 16:28:20,277 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-07 16:28:20,282 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-07 16:28:20,299 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 14:39:06,367 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ury-erp/pos --branch develop
+2026-07-09 14:39:06,403 LOG Getting pos
+2026-07-09 14:39:06,404 DEBUG cd ./apps && git clone https://github.com/ury-erp/pos --branch develop --depth 1 --origin upstream
+2026-07-09 14:39:08,564 LOG Installing ury_pos
+2026-07-09 14:39:08,565 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/ury_pos  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-07-09 14:39:11,322 DEBUG cd /home/mahmoud/frappe/my-bench/apps/ury_pos && yarn install --check-files
+2026-07-09 14:39:27,162 DEBUG bench build --app ury_pos
+2026-07-09 14:39:27,312 INFO /home/mahmoud/.local/bin/bench build --app ury_pos
+2026-07-09 14:41:44,201 INFO /home/mahmoud/.local/bin/bench --site our-project install-app pos
+2026-07-09 14:41:44,886 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ury-erp/pos --branch develop
+2026-07-09 14:41:44,899 LOG Getting pos
+2026-07-09 14:41:44,899 DEBUG cd ./apps && git clone https://github.com/ury-erp/pos --branch develop --depth 1 --origin upstream
+2026-07-09 14:41:46,948 WARNING /home/mahmoud/.local/bin/bench get-app https://github.com/ury-erp/pos --branch develop executed with exit code 1
+2026-07-09 14:43:46,727 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury_pos
+2026-07-09 14:44:30,367 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-cache
+2026-07-09 14:45:07,027 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 14:45:07,538 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 14:45:07,539 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 14:45:07,542 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 14:45:07,551 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 14:45:07,568 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 14:47:30,470 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 14:47:30,951 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 14:47:30,963 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 14:47:30,963 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 14:47:30,973 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 14:47:30,976 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 14:54:38,715 INFO /home/mahmoud/.local/bin/bench --site [my_resturant] migrate
+2026-07-09 14:54:54,167 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-07-09 14:55:00,803 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 14:55:01,204 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 14:55:01,206 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 14:55:01,218 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 14:55:01,227 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 14:55:01,230 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 15:10:07,515 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ury-erp/ury.git
+2026-07-09 15:10:07,537 LOG Getting ury
+2026-07-09 15:10:07,537 DEBUG cd ./apps && git clone https://github.com/ury-erp/ury.git  --depth 1 --origin upstream
+2026-07-09 15:10:10,258 LOG Installing ury
+2026-07-09 15:10:10,259 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/ury  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-07-09 15:10:11,210 DEBUG cd /home/mahmoud/frappe/my-bench/apps/ury && yarn install --check-files
+2026-07-09 15:12:34,271 DEBUG bench build --app ury
+2026-07-09 15:12:34,443 INFO /home/mahmoud/.local/bin/bench build --app ury
+2026-07-09 15:13:02,750 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury
+2026-07-09 15:15:42,202 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 15:15:42,635 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 15:15:42,638 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 15:15:42,643 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 15:15:42,657 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 15:15:42,666 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 15:15:52,634 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury
+2026-07-09 15:15:57,474 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-07-09 15:36:20,320 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 15:36:20,823 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 15:36:20,826 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 15:36:20,832 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 15:36:20,837 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 15:36:20,850 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 15:37:44,516 INFO /home/mahmoud/.local/bin/bench build
+2026-07-09 15:38:47,094 INFO /home/mahmoud/.local/bin/bench build
+2026-07-09 16:01:25,691 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 16:01:26,468 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 16:01:26,513 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 16:01:26,561 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 16:01:26,582 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 16:01:26,584 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 16:31:25,349 INFO /home/mahmoud/.local/bin/bench uninstall-app ury_pos
+2026-07-09 16:33:25,044 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 16:33:25,469 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 16:33:25,471 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 16:33:25,472 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 16:33:25,474 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 16:33:25,481 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 16:33:58,799 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 16:34:39,958 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 16:35:27,945 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 16:35:28,533 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 16:35:28,534 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 16:35:28,535 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 16:35:28,538 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 16:35:28,538 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 16:35:37,712 INFO /home/mahmoud/.local/bin/bench uninstall-app ury_pos
+2026-07-09 16:38:58,343 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, parent, user, room FROM `tabURY User`
+2026-07-09 16:39:05,499 INFO /home/mahmoud/.local/bin/bench mariadb -e SHOW TABLES LIKE '%tabURY User%';
+2026-07-09 16:39:13,111 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT * FROM `tabURY User`
+2026-07-09 16:39:18,898 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabBranch`
+2026-07-09 16:39:23,463 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, email, first_name FROM `tabUser` WHERE enabled=1
+2026-07-09 17:30:56,252 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, branch FROM `tabPOS Profile`
+2026-07-09 17:40:17,676 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT parent, role FROM `tabHas Role` WHERE parent = 'Administrator'
+2026-07-09 17:40:25,736 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, role_allowed_for_billing FROM `tabPOS Profile`
+2026-07-09 17:40:26,248 INFO /home/mahmoud/.local/bin/bench mariadb -e DESC `tabPOS Profile`
+2026-07-09 17:40:34,400 INFO /home/mahmoud/.local/bin/bench mariadb -e SHOW TABLES LIKE '%tabPOS Profile%';
+2026-07-09 17:40:42,155 INFO /home/mahmoud/.local/bin/bench mariadb -e SHOW TABLES LIKE '%tabPOS Allowed%';
+2026-07-09 17:40:50,804 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocType` WHERE name LIKE '%Role%' OR name LIKE '%POS%'
+2026-07-09 17:40:57,924 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT parent, parentfield, role FROM `tabHas Role` WHERE parent = 'POS Profile'
+2026-07-09 17:41:03,258 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT fieldname, options FROM `tabDocField` WHERE parent='POS Profile' AND fieldtype='Table'
+2026-07-09 17:41:12,931 INFO /home/mahmoud/.local/bin/bench mariadb -e DESC `tabPOS Profile User`
+2026-07-09 17:41:21,403 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocField` WHERE parent='POS Profile'
+2026-07-09 17:41:27,520 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT fieldname, label FROM `tabDocField` WHERE parent='POS Profile'
+2026-07-09 17:41:36,503 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, role_allowed_for_billing FROM `tabPOS Profile`
+2026-07-09 17:41:37,021 INFO /home/mahmoud/.local/bin/bench mariadb -e SHOW TABLES LIKE '%role%';
+2026-07-09 17:41:50,275 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocField` WHERE parent='POS Profile' AND (fieldname LIKE '%role%' OR label LIKE '%role%')
+2026-07-09 17:42:11,855 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-07-09 17:43:00,840 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabPOS Profile`
+2026-07-09 17:43:08,838 INFO /home/mahmoud/.local/bin/bench mariadb -e SHOW TABLES LIKE '%role_allowed_for_billing%';
+2026-07-09 17:43:18,278 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocType` WHERE name LIKE '%Role%'
+2026-07-09 17:43:24,454 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocField` WHERE fieldname='role_allowed_for_billing'
+2026-07-09 17:43:31,578 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, parent, fieldname, options FROM `tabCustom Field` WHERE fieldname='role_allowed_for_billing' OR options='URY POS Role Allowed for Billing'
+2026-07-09 17:43:38,970 INFO /home/mahmoud/.local/bin/bench mariadb -e DESC `tabCustom Field`
+2026-07-09 17:43:47,327 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name, dt, fieldname, options FROM `tabCustom Field` WHERE fieldname='role_allowed_for_billing'
+2026-07-09 17:43:57,254 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocField` WHERE parent='POS Profile' AND fieldname='role_allowed_for_billing'
+2026-07-09 17:44:06,245 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT name FROM `tabDocType` WHERE name='Role Permitted'
+2026-07-09 17:44:13,863 INFO /home/mahmoud/.local/bin/bench mariadb -e DESC `tabRole Permitted`
+2026-07-09 17:44:24,363 INFO /home/mahmoud/.local/bin/bench mariadb -e SELECT parent, role FROM `tabRole Permitted`
+2026-07-09 18:21:06,828 INFO /home/mahmoud/.local/bin/bench start
+2026-07-09 18:21:07,244 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-09 18:21:07,257 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-09 18:21:07,257 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-09 18:21:07,260 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-09 18:21:07,268 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-09 19:20:40,986 INFO /home/mahmoud/.local/bin/bench --site my_resturant uninstall-app ury_pos
+2026-07-09 19:21:50,751 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-07-09 19:21:52,927 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-07-09 19:24:28,861 INFO /home/mahmoud/.local/bin/bench remove-app ury_pos
+2026-07-09 19:24:29,002 INFO /home/mahmoud/.local/bin/bench --site all list-apps --format json
+2026-07-09 19:24:30,631 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-07-09 19:24:31,706 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-07-09 19:24:32,674 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip uninstall ury_pos --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-07-09 19:24:32,828 INFO App moved from apps/ury_pos to archived/apps/ury_pos-2026-07-09
+2026-07-12 22:17:51,590 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Nuvio.git
+2026-07-12 22:17:51,614 LOG Getting Nuvio
+2026-07-12 22:17:51,614 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/Nuvio.git  --depth 1 --origin upstream
+2026-07-12 22:18:03,675 WARNING /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Nuvio.git executed with exit code 1
+2026-07-12 22:19:47,143 INFO /home/mahmoud/.local/bin/bench remove-app ury
+2026-07-12 22:19:47,329 INFO /home/mahmoud/.local/bin/bench --site all list-apps --format json
+2026-07-12 22:19:49,246 WARNING /home/mahmoud/.local/bin/bench remove-app ury executed with exit code 1
+2026-07-12 22:20:14,082 INFO /home/mahmoud/.local/bin/bench uninstall-app ury
+2026-07-12 22:20:39,889 INFO /home/mahmoud/.local/bin/bench start
+2026-07-12 22:20:40,432 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-12 22:20:40,440 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-12 22:20:40,442 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-12 22:20:40,444 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-12 22:20:40,445 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-12 22:20:48,558 INFO /home/mahmoud/.local/bin/bench uninstall-app ury
+2026-07-12 22:23:13,619 INFO /home/mahmoud/.local/bin/bench start
+2026-07-12 22:23:14,201 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-12 22:23:14,224 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-12 22:23:14,232 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-12 22:23:14,241 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-12 22:23:14,246 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-12 22:23:28,077 INFO /home/mahmoud/.local/bin/bench uninstall-app ury
+2026-07-12 22:23:36,626 INFO /home/mahmoud/.local/bin/bench remove-app ury
+2026-07-12 22:23:36,925 INFO /home/mahmoud/.local/bin/bench --site all list-apps --format json
+2026-07-12 22:23:39,038 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-07-12 22:23:41,610 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-07-12 22:23:43,771 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip uninstall ury --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-07-12 22:23:44,034 INFO App moved from apps/ury to archived/apps/ury-2026-07-12
+2026-07-12 22:29:31,169 INFO /home/mahmoud/.local/bin/bench start
+2026-07-12 22:29:32,120 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-12 22:29:32,151 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-12 22:29:32,152 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-12 22:29:32,154 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-12 22:29:32,169 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-12 22:29:52,316 INFO /home/mahmoud/.local/bin/bench remove-app Nuvio
+2026-07-12 22:29:52,553 INFO /home/mahmoud/.local/bin/bench --site all list-apps --format json
+2026-07-12 22:29:53,553 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-07-12 22:29:54,632 WARNING /home/mahmoud/.local/bin/bench remove-app Nuvio executed with exit code 1
+2026-07-12 22:30:49,541 INFO /home/mahmoud/.local/bin/bench get-app https://github.com/ahmed-hashim2024/Nuvio.git
+2026-07-12 22:30:49,566 LOG Getting Nuvio
+2026-07-12 22:30:49,567 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/Nuvio.git  --depth 1 --origin upstream
+2026-07-12 22:30:55,310 LOG Installing ury
+2026-07-12 22:30:55,310 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/ury  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-07-12 22:30:56,454 DEBUG cd /home/mahmoud/frappe/my-bench/apps/ury && yarn install --check-files
+2026-07-12 22:36:26,377 DEBUG bench build --app ury
+2026-07-12 22:36:26,600 INFO /home/mahmoud/.local/bin/bench build --app ury
+2026-07-14 17:41:56,514 INFO /home/mahmoud/.local/bin/bench start
+2026-07-14 17:41:56,915 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-14 17:41:56,915 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-14 17:41:56,916 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-14 17:41:56,925 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-14 17:41:56,931 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-20 16:37:04,936 INFO /home/mahmoud/.local/bin/bench migrate
+2026-07-20 16:37:31,232 INFO /home/mahmoud/.local/bin/bench start
+2026-07-20 16:37:31,713 INFO /home/mahmoud/.local/bin/bench worker
+2026-07-20 16:37:31,713 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-20 16:37:31,715 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-20 16:37:31,719 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-20 16:37:31,722 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-20 16:37:49,800 INFO /home/mahmoud/.local/bin/bench migrate
+2026-07-22 01:33:01,547 INFO /home/mahmoud/.local/bin/bench start
+2026-07-22 01:33:02,072 INFO /home/mahmoud/.local/bin/bench watch
+2026-07-22 01:33:02,077 INFO /home/mahmoud/.local/bin/bench socketio
+2026-07-22 01:33:02,083 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-07-22 01:33:02,094 INFO /home/mahmoud/.local/bin/bench schedule
+2026-07-22 01:33:02,097 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-03 02:06:28,987 INFO /home/mahmoud/.local/bin/bench setup production mahmoud
+2026-08-03 02:06:29,024 DEBUG sudo /home/mahmoud/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 02:06:29,080 WARNING sudo /home/mahmoud/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible executed with exit code 1
+2026-08-03 02:06:29,081 WARNING /home/mahmoud/.local/bin/bench setup production mahmoud executed with exit code 1
+2026-08-03 02:07:42,141 INFO /home/mahmoud/.local/bin/bench setup production mahmoud
+2026-08-03 02:07:42,152 DEBUG sudo /home/mahmoud/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 02:08:39,858 DEBUG bench setup role fail2ban
+2026-08-03 02:08:39,859 WARNING /home/mahmoud/.local/bin/bench setup production mahmoud executed with exit code 1
+2026-08-03 02:09:25,703 INFO /usr/local/bin/bench setup production mahmoud
+2026-08-03 02:09:25,713 DEBUG sudo /home/mahmoud/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 02:09:26,225 DEBUG bench setup role fail2ban
+2026-08-03 02:09:26,365 INFO /usr/local/bin/bench setup role fail2ban
+2026-08-03 02:09:26,374 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2026-08-03 02:09:26,793 WARNING bench setup role fail2ban executed with exit code 1
+2026-08-03 02:09:26,793 WARNING /usr/local/bin/bench setup production mahmoud executed with exit code 1
+2026-08-03 02:10:27,666 INFO /usr/local/bin/bench setup production mahmoud
+2026-08-03 02:10:27,675 DEBUG bench setup role fail2ban
+2026-08-03 02:10:27,812 INFO /usr/local/bin/bench setup role fail2ban
+2026-08-03 02:10:45,608 DEBUG bench setup role nginx
+2026-08-03 02:10:45,758 INFO /usr/local/bin/bench setup role nginx
+2026-08-03 02:10:57,467 WARNING /usr/local/bin/bench setup role nginx executed with exit code 1
+2026-08-03 02:10:57,885 WARNING bench setup role nginx executed with exit code 1
+2026-08-03 02:10:57,885 WARNING /usr/local/bin/bench setup production mahmoud executed with exit code 1
+2026-08-03 02:11:53,519 INFO /usr/local/bin/bench setup production mahmoud
+2026-08-03 02:11:53,529 DEBUG bench setup role supervisor
+2026-08-03 02:11:53,670 INFO /usr/local/bin/bench setup role supervisor
+2026-08-03 02:12:03,109 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2026-08-03 02:12:03,109 LOG Updated supervisord.conf: 'chown' changed from '' to 'mahmoud:mahmoud'
+2026-08-03 02:12:03,179 DEBUG sudo /usr/sbin/nginx -t
+2026-08-03 02:12:03,195 DEBUG sudo systemctl reload nginx
+2026-08-03 02:13:19,498 INFO /home/mahmoud/.local/bin/bench --version
+2026-08-03 02:22:12,479 INFO /home/mahmoud/.local/bin/bench use attia
+2026-08-03 02:22:34,760 INFO /home/mahmoud/.local/bin/bench --site attia add-domain localhost
+2026-08-03 02:22:37,745 INFO /home/mahmoud/.local/bin/bench setup nginx
+2026-08-03 02:22:51,917 INFO /home/mahmoud/.local/bin/bench config dns_multitenant off
+2026-08-03 02:23:01,858 WARNING /home/mahmoud/.local/bin/bench setup nginx executed with exit code 1
+2026-08-03 02:23:31,407 INFO /home/mahmoud/.local/bin/bench setup nginx --yes
+2026-08-03 02:34:09,227 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-03 02:37:06,603 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-03 02:40:12,437 INFO /home/mahmoud/.local/bin/bench status
+2026-08-03 02:41:19,269 INFO /home/mahmoud/.local/bin/bench --version
+2026-08-03 02:42:04,821 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-03 02:43:15,779 INFO /home/mahmoud/.local/bin/bench start
+2026-08-03 02:45:11,955 INFO /home/mahmoud/.local/bin/bench start
+2026-08-03 02:46:41,563 INFO /home/mahmoud/.local/bin/bench start
+2026-08-03 02:46:41,973 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-03 02:46:41,974 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-03 02:46:41,976 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-03 02:46:41,978 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-03 02:46:41,985 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-03 02:49:01,600 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-03 02:53:28,354 INFO /home/mahmoud/.local/bin/bench list-apps
+2026-08-03 02:56:35,181 INFO /home/mahmoud/.local/bin/bench setup requirements
+2026-08-03 02:56:35,194 DEBUG uv pip install --quiet --upgrade pip --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-08-03 02:56:36,756 LOG Installing frappe
+2026-08-03 02:56:36,757 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/frappe  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-08-03 02:56:39,510 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet coverage~=7.14.1 pyngrok~=8.1.2 unittest-xml-reporting~=4.0.0 watchdog~=6.0.0 hypothesis~=6.155.2 responses==0.23.1 freezegun~=1.5.5  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-08-03 02:56:41,757 DEBUG cd /home/mahmoud/frappe/my-bench/apps/frappe && yarn install --check-files
+2026-08-03 02:56:57,280 LOG Installing first_app
+2026-08-03 02:56:57,280 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/first_app  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-08-03 02:56:57,762 LOG Installing erpnext
+2026-08-03 02:56:57,762 DEBUG cd /home/mahmoud/frappe/my-bench && uv pip install --quiet -e /home/mahmoud/frappe/my-bench/apps/erpnext  --python /home/mahmoud/frappe/my-bench/env/bin/python
+2026-08-03 02:56:58,873 DEBUG cd /home/mahmoud/frappe/my-bench/apps/erpnext && yarn install --check-files
+2026-08-03 02:57:29,481 WARNING cd /home/mahmoud/frappe/my-bench/apps/erpnext && yarn install --check-files executed with exit code 1
+2026-08-03 02:57:29,482 WARNING /home/mahmoud/.local/bin/bench setup requirements executed with exit code 1
+2026-08-03 02:57:43,136 INFO /home/mahmoud/.local/bin/bench build
+2026-08-03 03:00:26,049 INFO /home/mahmoud/.local/bin/bench list-apps
+2026-08-04 02:26:08,281 INFO /home/mahmoud/.local/bin/bench version
+2026-08-04 02:28:08,413 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-08-04 02:28:17,608 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 02:28:58,555 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury
+2026-08-04 02:31:48,119 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:31:48,703 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 02:31:48,714 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 02:31:48,719 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 02:31:48,722 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 02:31:48,735 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 02:31:59,167 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury
+2026-08-04 02:45:47,706 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:45:48,343 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 02:45:48,348 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 02:45:48,356 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 02:45:48,363 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 02:45:48,421 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 02:45:59,506 INFO /home/mahmoud/.local/bin/bench --site my_resturant install-app ury
+2026-08-04 02:46:28,045 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 02:46:52,227 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 02:47:48,597 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:47:49,140 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 02:47:49,142 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 02:47:49,142 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 02:47:49,156 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 02:47:49,160 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 02:48:10,879 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 02:50:42,999 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-04 02:52:22,351 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-04 02:53:45,355 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:54:32,569 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:57:24,221 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 02:57:25,401 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 02:57:25,430 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 02:57:25,450 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 02:57:25,452 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 02:57:25,593 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 02:57:39,123 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-04 02:58:07,255 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 02:58:16,327 INFO /home/mahmoud/.local/bin/bench --site my_resturant doctor
+2026-08-04 02:59:33,508 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 03:00:02,455 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:00:03,135 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:00:03,137 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:00:03,141 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:00:03,147 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:00:03,154 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:00:10,181 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 03:00:48,655 INFO /home/mahmoud/.local/bin/bench --site my_resturant doctor
+2026-08-04 03:02:08,263 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 03:02:13,191 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:02:13,866 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:02:13,876 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:02:13,879 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:02:13,881 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:02:13,892 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:02:19,217 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 03:02:47,142 INFO /home/mahmoud/.local/bin/bench --site my_resturant doctor
+2026-08-04 03:03:08,398 INFO /home/mahmoud/.local/bin/bench status
+2026-08-04 03:03:26,326 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 03:03:36,582 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:03:37,334 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:03:37,341 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:03:37,349 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:03:37,400 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:03:37,435 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:03:45,289 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 03:04:55,336 INFO /home/mahmoud/.local/bin/bench --site my_resturant show-pending-jobs
+2026-08-04 03:05:03,073 INFO /home/mahmoud/.local/bin/bench --site my_resturant doctor
+2026-08-04 03:06:59,377 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 03:07:22,315 INFO /home/mahmoud/.local/bin/bench --site my_resturant console
+2026-08-04 03:11:26,563 INFO /home/mahmoud/.local/bin/bench doctor
+2026-08-04 03:11:44,825 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 03:13:03,413 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 03:13:12,598 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:13:27,176 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:13:27,597 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:13:27,600 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:13:27,603 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:13:27,604 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:13:27,607 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:13:40,223 INFO /home/mahmoud/.local/bin/bench --site my_resturant console
+2026-08-04 03:15:59,460 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:15:59,899 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:15:59,911 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:15:59,926 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:15:59,936 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:15:59,936 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:16:13,210 INFO /home/mahmoud/.local/bin/bench --site my_resturant console
+2026-08-04 03:19:59,672 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 03:20:34,624 INFO /home/mahmoud/.local/bin/bench build --app ury
+2026-08-04 03:21:01,506 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-08-04 03:21:03,648 INFO /home/mahmoud/.local/bin/bench restart
+2026-08-04 03:21:07,868 DEBUG cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe:
+2026-08-04 03:21:08,083 WARNING cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-08-04 03:21:08,084 WARNING /home/mahmoud/.local/bin/bench restart executed with exit code 1
+2026-08-04 03:22:35,122 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:22:35,561 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:22:35,569 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 03:22:35,569 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:22:35,576 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:22:35,577 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:22:40,898 INFO /home/mahmoud/.local/bin/bench clear-cache
+2026-08-04 03:23:21,656 INFO /home/mahmoud/.local/bin/bench restart
+2026-08-04 03:23:22,273 DEBUG cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe:
+2026-08-04 03:23:22,482 WARNING cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-08-04 03:23:22,483 WARNING /home/mahmoud/.local/bin/bench restart executed with exit code 1
+2026-08-04 03:23:44,460 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 03:23:44,884 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 03:23:44,897 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 03:23:44,898 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 03:23:44,904 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 03:23:44,912 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:31:14,564 INFO /home/mahmoud/.local/bin/bench restart
+2026-08-04 18:31:18,199 WARNING /home/mahmoud/.local/bin/bench restart executed with exit code 1
+2026-08-04 18:31:23,312 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:31:23,803 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:31:23,805 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:31:23,809 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:31:23,816 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:31:23,821 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:32:05,634 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 18:32:36,834 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:32:37,245 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:32:37,250 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:32:37,254 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:32:37,255 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:32:37,258 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:36:33,074 INFO /home/mahmoud/.local/bin/bench --site my_resturant console
+2026-08-04 18:38:57,241 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:38:57,742 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:38:57,745 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:38:57,748 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:38:57,753 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:38:57,756 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:41:11,343 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:41:11,798 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:41:11,801 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:41:11,814 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:41:11,814 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:41:11,822 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:42:08,575 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:42:09,019 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:42:09,030 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:42:09,031 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:42:09,045 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:42:09,052 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:43:06,099 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 18:49:33,622 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 18:53:37,462 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:53:37,961 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:53:37,961 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:53:37,967 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:53:37,968 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:53:37,974 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:54:45,182 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:54:45,622 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:54:45,622 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:54:45,624 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:54:45,625 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:54:45,628 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:55:38,137 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 18:55:38,653 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 18:55:38,660 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 18:55:38,663 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 18:55:38,678 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 18:55:38,706 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-04 18:59:26,666 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 19:03:45,917 INFO /home/mahmoud/.local/bin/bench --site attia migrate
+2026-08-04 19:05:12,695 INFO /home/mahmoud/.local/bin/bench --site my_resturant migrate
+2026-08-04 19:05:57,397 INFO /home/mahmoud/.local/bin/bench build --app ury
+2026-08-04 19:06:59,396 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-cache
+2026-08-04 19:07:01,050 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-website-cache
+2026-08-04 19:10:11,474 INFO /home/mahmoud/.local/bin/bench --site my_resturant list-apps
+2026-08-04 19:10:18,037 INFO /home/mahmoud/.local/bin/bench --site attia list-apps
+2026-08-04 19:10:49,229 INFO /home/mahmoud/.local/bin/bench --site my_resturant use
+2026-08-04 19:12:12,216 INFO /home/mahmoud/.local/bin/bench --site attia console
+2026-08-04 19:14:47,742 INFO /home/mahmoud/.local/bin/bench --site my_resturant console
+2026-08-04 19:18:54,002 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-cache
+2026-08-04 19:18:55,660 INFO /home/mahmoud/.local/bin/bench --site my_resturant clear-website-cache
+2026-08-04 19:18:57,089 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:19:18,008 INFO /home/mahmoud/.local/bin/bench restart
+2026-08-04 19:19:54,531 DEBUG cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe:
+2026-08-04 19:19:54,720 WARNING cd /home/mahmoud/frappe/my-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-08-04 19:19:54,720 WARNING /home/mahmoud/.local/bin/bench restart executed with exit code 1
+2026-08-04 19:21:21,112 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:26:48,086 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:27:59,777 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:30:10,484 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:34:45,115 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:54:31,229 INFO /home/mahmoud/.local/bin/bench build
+2026-08-04 19:57:03,001 INFO /home/mahmoud/.local/bin/bench start
+2026-08-04 19:57:03,758 INFO /home/mahmoud/.local/bin/bench schedule
+2026-08-04 19:57:03,761 INFO /home/mahmoud/.local/bin/bench serve --port 8000
+2026-08-04 19:57:03,762 INFO /home/mahmoud/.local/bin/bench socketio
+2026-08-04 19:57:03,774 INFO /home/mahmoud/.local/bin/bench watch
+2026-08-04 19:57:03,791 INFO /home/mahmoud/.local/bin/bench worker
+2026-08-05 04:43:52,540 INFO /home/user/.local/bin/bench start
+2026-08-05 04:51:35,615 INFO /home/user/.local/bin/bench start
+2026-08-05 04:51:35,826 INFO /home/user/.local/bin/bench socketio
+2026-08-05 04:51:35,827 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 04:51:35,828 INFO /home/user/.local/bin/bench watch
+2026-08-05 04:51:35,830 INFO /home/user/.local/bin/bench schedule
+2026-08-05 04:51:35,837 INFO /home/user/.local/bin/bench worker
+2026-08-05 04:54:47,552 INFO /home/user/.local/bin/bench start
+2026-08-05 04:54:47,750 INFO /home/user/.local/bin/bench socketio
+2026-08-05 04:54:47,751 INFO /home/user/.local/bin/bench schedule
+2026-08-05 04:54:47,752 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 04:54:47,753 INFO /home/user/.local/bin/bench worker
+2026-08-05 04:54:47,758 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:02:37,353 INFO /home/user/.local/bin/bench start
+2026-08-05 05:02:37,583 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:02:37,592 INFO /home/user/.local/bin/bench worker
+2026-08-05 05:02:37,596 INFO /home/user/.local/bin/bench socketio
+2026-08-05 05:02:37,598 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 05:02:37,607 INFO /home/user/.local/bin/bench schedule
+2026-08-05 05:02:37,772 WARNING /home/user/.local/bin/bench socketio executed with exit code 1
+2026-08-05 05:05:08,814 INFO /home/user/.local/bin/bench start
+2026-08-05 05:05:09,021 INFO /home/user/.local/bin/bench schedule
+2026-08-05 05:05:09,022 INFO /home/user/.local/bin/bench socketio
+2026-08-05 05:05:09,023 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:05:09,030 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 05:05:09,034 INFO /home/user/.local/bin/bench worker
+2026-08-05 05:05:09,194 WARNING /home/user/.local/bin/bench socketio executed with exit code 1
+2026-08-05 05:07:12,114 INFO /home/user/.local/bin/bench start
+2026-08-05 05:07:12,329 INFO /home/user/.local/bin/bench socketio
+2026-08-05 05:07:12,330 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 05:07:12,336 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:07:12,340 INFO /home/user/.local/bin/bench worker
+2026-08-05 05:07:12,344 INFO /home/user/.local/bin/bench schedule
+2026-08-05 05:10:11,069 INFO /home/user/.local/bin/bench start
+2026-08-05 05:10:11,278 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:10:11,280 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 05:10:11,281 INFO /home/user/.local/bin/bench socketio
+2026-08-05 05:10:11,288 INFO /home/user/.local/bin/bench schedule
+2026-08-05 05:10:11,289 INFO /home/user/.local/bin/bench worker
+2026-08-05 05:11:15,339 INFO /home/user/.local/bin/bench setup assets
+2026-08-05 05:11:15,345 WARNING /home/user/.local/bin/bench setup assets executed with exit code 2
+2026-08-05 05:11:43,648 INFO /home/user/.local/bin/bench build
+2026-08-05 05:25:06,728 INFO /home/user/.local/bin/bench build
+2026-08-05 05:25:49,761 INFO /home/user/.local/bin/bench start
+2026-08-05 05:25:49,978 INFO /home/user/.local/bin/bench schedule
+2026-08-05 05:25:49,981 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-05 05:25:49,981 INFO /home/user/.local/bin/bench watch
+2026-08-05 05:25:49,984 INFO /home/user/.local/bin/bench worker
+2026-08-05 05:25:49,985 INFO /home/user/.local/bin/bench socketio
+2026-08-07 19:36:03,157 INFO /home/user/.local/bin/bench start
+2026-08-07 19:36:03,438 INFO /home/user/.local/bin/bench schedule
+2026-08-07 19:36:03,439 INFO /home/user/.local/bin/bench worker
+2026-08-07 19:36:03,444 INFO /home/user/.local/bin/bench watch
+2026-08-07 19:36:03,445 INFO /home/user/.local/bin/bench socketio
+2026-08-07 19:36:03,445 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-07 19:38:06,986 INFO /home/user/.local/bin/bench migrate
+2026-08-07 19:47:32,807 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-07 19:48:15,764 INFO /home/user/.local/bin/bench start
+2026-08-07 19:48:16,049 INFO /home/user/.local/bin/bench socketio
+2026-08-07 19:48:16,051 INFO /home/user/.local/bin/bench schedule
+2026-08-07 19:48:16,058 INFO /home/user/.local/bin/bench watch
+2026-08-07 19:48:16,059 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-07 19:48:16,061 INFO /home/user/.local/bin/bench worker
+2026-08-07 19:51:26,484 INFO /home/user/.local/bin/bench start
+2026-08-07 19:54:48,339 INFO /home/user/.local/bin/bench start
+2026-08-09 03:50:32,993 INFO /home/user/.local/bin/bench start
+2026-08-09 03:50:33,300 INFO /home/user/.local/bin/bench worker
+2026-08-09 03:50:33,301 INFO /home/user/.local/bin/bench watch
+2026-08-09 03:50:33,301 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-09 03:50:33,308 INFO /home/user/.local/bin/bench socketio
+2026-08-09 03:50:33,312 INFO /home/user/.local/bin/bench schedule
+2026-08-09 04:12:16,172 INFO /home/user/.local/bin/bench start
+2026-08-09 04:12:16,406 INFO /home/user/.local/bin/bench socketio
+2026-08-09 04:12:16,410 INFO /home/user/.local/bin/bench schedule
+2026-08-09 04:12:16,412 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-09 04:12:16,414 INFO /home/user/.local/bin/bench watch
+2026-08-09 04:12:16,417 INFO /home/user/.local/bin/bench worker
+2026-08-09 04:19:31,529 INFO /home/user/.local/bin/bench start
+2026-08-09 04:21:55,742 INFO /home/user/.local/bin/bench start
+2026-08-09 04:21:55,973 INFO /home/user/.local/bin/bench watch
+2026-08-09 04:21:55,974 INFO /home/user/.local/bin/bench socketio
+2026-08-09 04:21:55,975 INFO /home/user/.local/bin/bench schedule
+2026-08-09 04:21:55,976 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-09 04:21:55,978 INFO /home/user/.local/bin/bench worker
+2026-08-09 04:25:32,563 INFO /home/user/.local/bin/bench --site my_resturant restore /home/user/test/sites/my_resturant/private/backups/20260712_222052-my_resturant-database.sql.gz --mariadb-root-username root
+2026-08-09 04:33:00,629 INFO /home/user/.local/bin/bench --site my_resturant migrate
+2026-08-09 05:08:32,902 INFO /home/user/.local/bin/bench start
+2026-08-09 05:08:33,133 INFO /home/user/.local/bin/bench socketio
+2026-08-09 05:08:33,135 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-09 05:08:33,142 INFO /home/user/.local/bin/bench worker
+2026-08-09 05:08:33,145 INFO /home/user/.local/bin/bench schedule
+2026-08-09 05:08:33,146 INFO /home/user/.local/bin/bench watch
+2026-08-14 09:48:54,202 INFO /home/user/.local/bin/bench start
+2026-08-14 09:48:54,814 INFO /home/user/.local/bin/bench socketio
+2026-08-14 09:48:54,817 INFO /home/user/.local/bin/bench watch
+2026-08-14 09:48:54,818 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-14 09:48:54,823 INFO /home/user/.local/bin/bench worker
+2026-08-14 09:48:54,830 INFO /home/user/.local/bin/bench schedule
+2026-08-14 11:28:37,041 INFO /home/user/.local/bin/bench restart
+2026-08-14 11:28:56,397 INFO /home/user/.local/bin/bench restart
+2026-08-14 11:28:59,021 INFO /home/user/.local/bin/bench start
+2026-08-14 11:29:17,159 INFO /home/user/.local/bin/bench start
+2026-08-14 11:38:46,682 INFO /home/user/.local/bin/bench start
+2026-08-14 11:48:06,996 INFO /home/user/.local/bin/bench start
+2026-08-14 11:48:07,304 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-14 11:48:07,319 INFO /home/user/.local/bin/bench worker
+2026-08-14 11:48:07,320 INFO /home/user/.local/bin/bench schedule
+2026-08-14 11:48:07,320 INFO /home/user/.local/bin/bench socketio
+2026-08-14 11:48:07,322 INFO /home/user/.local/bin/bench watch
+2026-08-16 16:15:46,049 INFO /home/user/.local/bin/bench start
+2026-08-16 16:15:46,383 INFO /home/user/.local/bin/bench schedule
+2026-08-16 16:15:46,383 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-16 16:15:46,388 INFO /home/user/.local/bin/bench socketio
+2026-08-16 16:15:46,393 INFO /home/user/.local/bin/bench watch
+2026-08-16 16:15:46,400 INFO /home/user/.local/bin/bench worker
+2026-08-21 16:58:00,984 INFO /home/user/.local/bin/bench start
+2026-08-21 16:58:01,570 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 16:58:01,581 INFO /home/user/.local/bin/bench schedule
+2026-08-21 16:58:01,581 INFO /home/user/.local/bin/bench watch
+2026-08-21 16:58:01,581 INFO /home/user/.local/bin/bench worker
+2026-08-21 16:58:01,593 INFO /home/user/.local/bin/bench socketio
+2026-08-21 16:58:21,088 INFO /home/user/.local/bin/bench uninstall-app ury
+2026-08-21 17:03:29,459 INFO /home/user/.local/bin/bench --version
+2026-08-21 17:09:27,222 INFO /home/user/.local/bin/bench version
+2026-08-21 17:09:36,891 INFO /home/user/.local/bin/bench build --hard-link
+2026-08-21 17:11:00,115 INFO /home/user/.local/bin/bench build --hard-link
+2026-08-21 17:11:35,457 INFO /home/user/.local/bin/bench version
+2026-08-21 20:01:12,439 INFO /home/user/.local/bin/bench start
+2026-08-21 20:01:12,746 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:01:12,747 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:01:12,747 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:01:12,747 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:01:12,756 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:01:39,744 INFO /home/user/.local/bin/bench start
+2026-08-21 20:01:39,966 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:01:39,969 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:01:39,970 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:01:39,970 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:01:39,971 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:01:48,124 INFO /home/user/.local/bin/bench start
+2026-08-21 20:01:48,350 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:01:48,355 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:01:48,357 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:01:48,365 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:01:48,373 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:03:01,022 INFO /home/user/.local/bin/bench start
+2026-08-21 20:03:01,309 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:03:01,319 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:03:01,322 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:03:01,324 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:03:01,326 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:05:03,899 INFO /home/user/.local/bin/bench start
+2026-08-21 20:05:04,189 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:05:04,193 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:05:04,196 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:05:04,196 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:05:04,196 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:07:42,578 INFO /home/user/.local/bin/bench start
+2026-08-21 20:07:42,804 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:07:42,806 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:07:42,808 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:07:42,809 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:07:42,809 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:12:17,602 INFO /home/user/.local/bin/bench setup requirements
+2026-08-21 20:12:17,605 DEBUG uv pip install --quiet --upgrade pip --python /home/user/test/env/bin/python
+2026-08-21 20:12:38,499 INFO /home/user/.local/bin/bench setup requirements
+2026-08-21 20:12:38,503 DEBUG uv pip install --quiet --upgrade pip --python /home/user/test/env/bin/python
+2026-08-21 20:17:42,371 LOG Installing frappe
+2026-08-21 20:17:42,543 WARNING /home/user/.local/bin/bench setup requirements executed with exit code 1
+2026-08-21 20:20:39,875 INFO /home/user/.local/bin/bench setup requirements
+2026-08-21 20:20:39,878 DEBUG uv pip install --quiet --upgrade pip --python /home/user/test/env/bin/python
+2026-08-21 20:25:42,699 LOG Installing frappe
+2026-08-21 20:25:42,700 DEBUG cd /home/user/test && uv pip install --quiet -e /home/user/test/apps/frappe  --python /home/user/test/env/bin/python
+2026-08-21 20:30:49,378 DEBUG cd /home/user/test && uv pip install --quiet coverage~=7.10.0 Faker~=18.10.1 pyngrok~=7.5.0 unittest-xml-reporting~=3.2.0 watchdog~=6.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.5.5  --python /home/user/test/env/bin/python
+2026-08-21 20:35:52,421 DEBUG cd /home/user/test/apps/frappe && yarn install --check-files
+2026-08-21 20:36:20,828 INFO /home/user/.local/bin/bench build
+2026-08-21 20:36:41,437 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:36:57,520 INFO /home/user/.local/bin/bench start
+2026-08-21 20:37:04,958 INFO /home/user/.local/bin/bench start
+2026-08-21 20:37:29,653 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:40:23,711 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:42:23,301 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:44:19,275 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:45:09,485 INFO /home/user/.local/bin/bench start
+2026-08-21 20:45:09,699 INFO /home/user/.local/bin/bench socketio
+2026-08-21 20:45:09,699 INFO /home/user/.local/bin/bench watch
+2026-08-21 20:45:09,703 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-21 20:45:09,710 INFO /home/user/.local/bin/bench schedule
+2026-08-21 20:45:09,711 INFO /home/user/.local/bin/bench worker
+2026-08-21 20:45:33,451 INFO /home/user/.local/bin/bench migrate
+2026-08-21 20:46:27,115 INFO /home/user/.local/bin/bench drop-site
+2026-08-21 20:47:24,978 INFO /home/user/.local/bin/bench drop-site attia
+2026-08-21 20:47:53,658 INFO /home/user/.local/bin/bench drop-site attia --force
+2026-08-22 14:16:22,522 INFO /home/user/.local/bin/bench start
+2026-08-22 14:16:22,977 INFO /home/user/.local/bin/bench socketio
+2026-08-22 14:16:22,977 INFO /home/user/.local/bin/bench worker
+2026-08-22 14:16:22,979 INFO /home/user/.local/bin/bench schedule
+2026-08-22 14:16:22,984 INFO /home/user/.local/bin/bench watch
+2026-08-22 14:16:22,985 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-22 14:31:41,455 INFO /home/user/.local/bin/bench start
+2026-08-22 14:31:55,629 INFO /home/user/.local/bin/bench start
+2026-08-22 14:33:30,054 INFO /home/user/.local/bin/bench start
+2026-08-22 14:33:30,448 INFO /home/user/.local/bin/bench socketio
+2026-08-22 14:33:30,456 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-22 14:33:30,458 INFO /home/user/.local/bin/bench worker
+2026-08-22 14:33:30,463 INFO /home/user/.local/bin/bench schedule
+2026-08-22 14:33:30,465 INFO /home/user/.local/bin/bench watch
+2026-08-22 14:59:46,363 INFO /home/user/.local/bin/bench get-app --branch version-16 erpnext https://github.com/frappe/erpnext
+2026-08-22 14:59:46,375 LOG Getting erpnext
+2026-08-22 14:59:46,375 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-16 --depth 1 --origin upstream
+2026-08-22 14:59:58,344 LOG Installing erpnext
+2026-08-22 14:59:58,344 DEBUG cd /home/user/test && uv pip install --quiet -e /home/user/test/apps/erpnext  --python /home/user/test/env/bin/python
+2026-08-22 15:00:05,681 DEBUG cd /home/user/test/apps/erpnext && yarn install --check-files
+2026-08-22 15:01:11,194 DEBUG bench build --app erpnext
+2026-08-22 15:01:11,415 INFO /home/user/.local/bin/bench build --app erpnext
+2026-08-22 15:10:56,906 INFO /home/user/.local/bin/bench start
+2026-08-22 15:11:20,362 INFO /home/user/.local/bin/bench start
+2026-08-22 15:11:20,802 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-22 15:11:20,806 INFO /home/user/.local/bin/bench socketio
+2026-08-22 15:11:20,807 INFO /home/user/.local/bin/bench worker
+2026-08-22 15:11:20,814 INFO /home/user/.local/bin/bench watch
+2026-08-22 15:11:20,820 INFO /home/user/.local/bin/bench schedule
+2026-08-22 15:17:36,781 INFO /home/user/.local/bin/bench get-app https://github.com/ahmed-hashim2024/c-pro.git
+2026-08-22 15:17:36,796 LOG Getting c-pro
+2026-08-22 15:17:36,796 DEBUG cd ./apps && git clone https://github.com/ahmed-hashim2024/c-pro.git  --depth 1 --origin upstream
+2026-08-22 15:17:38,124 LOG Installing cpro
+2026-08-22 15:17:38,125 DEBUG cd /home/user/test && uv pip install --quiet -e /home/user/test/apps/cpro  --python /home/user/test/env/bin/python
+2026-08-22 15:17:39,056 DEBUG bench build --app cpro
+2026-08-22 15:17:39,246 INFO /home/user/.local/bin/bench build --app cpro
+2026-08-22 15:20:02,787 INFO /home/user/.local/bin/bench --site attia install-app cpro
+2026-08-22 15:20:32,392 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:20:51,578 INFO /home/user/.local/bin/bench start
+2026-08-22 15:20:52,034 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-22 15:20:52,037 INFO /home/user/.local/bin/bench socketio
+2026-08-22 15:20:52,048 INFO /home/user/.local/bin/bench watch
+2026-08-22 15:20:52,049 INFO /home/user/.local/bin/bench schedule
+2026-08-22 15:20:52,057 INFO /home/user/.local/bin/bench worker
+2026-08-22 15:21:15,794 INFO /home/user/.local/bin/bench start
+2026-08-22 15:21:49,951 INFO /home/user/.local/bin/bench start
+2026-08-22 15:22:08,734 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:24:14,088 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:24:25,422 INFO /home/user/.local/bin/bench start
+2026-08-22 15:25:46,491 INFO /home/user/.local/bin/bench start
+2026-08-22 15:25:47,426 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-22 15:25:47,432 INFO /home/user/.local/bin/bench socketio
+2026-08-22 15:25:47,440 INFO /home/user/.local/bin/bench watch
+2026-08-22 15:25:47,453 INFO /home/user/.local/bin/bench schedule
+2026-08-22 15:25:47,457 INFO /home/user/.local/bin/bench worker
+2026-08-22 15:26:08,999 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:30:19,812 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:32:19,822 INFO /home/user/.local/bin/bench --site attia restore /path/to/database.sql.gz
+2026-08-22 15:32:27,128 INFO /home/user/.local/bin/bench --site attia reinstall
+2026-08-22 15:39:02,057 INFO /home/user/.local/bin/bench --site attia reinstall
+2026-08-22 15:39:34,213 INFO /home/user/.local/bin/bench --site attia reinstall
+2026-08-22 15:40:46,318 INFO /home/user/.local/bin/bench --site attia reinstall
+2026-08-22 15:41:44,939 INFO /home/user/.local/bin/bench --site attia reinstall --yes
+2026-08-22 15:41:56,344 INFO /home/user/.local/bin/bench --site attia reinstall --yes --db-root-password root123
+2026-08-22 15:42:12,724 INFO /home/user/.local/bin/bench reinstall --help
+2026-08-22 15:42:43,704 INFO /home/user/.local/bin/bench --site attia reinstall --yes
+2026-08-22 15:42:59,991 INFO /home/user/.local/bin/bench --site attia reinstall --yes --db-root-username root --db-root-password root123
+2026-08-22 15:43:36,289 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-22 15:44:11,435 INFO /home/user/.local/bin/bench start
+2026-08-22 15:44:16,979 INFO /home/user/.local/bin/bench start
+2026-08-22 16:41:36,114 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_module_app --args ['Currency']
+2026-08-22 16:41:41,619 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.modules.utils.get_module_app --args ['Currency']
+2026-08-22 16:41:47,429 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['DocType', 'Currency', 'module']
+2026-08-22 16:42:25,582 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args ['{"items":[{"item_code":"shawerma","qty":2}]}']
+2026-08-22 16:42:37,173 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, module FROM tabDocType WHERE module LIKE 'UR%' OR module LIKE '%URY%' OR name LIKE '%URY%'"]
+2026-08-22 16:42:45,001 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, options, module FROM tabDocField WHERE parent='POS Opening Entry' OR options IN (SELECT name FROM tabDocType WHERE module='URY')"]
+2026-08-22 16:42:52,214 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT fieldname, options, fieldtype FROM tabDocField WHERE parent='POS Opening Entry'"]
+2026-08-22 16:42:57,763 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['DocType', 'POS Opening Entry Detail', 'module']
+2026-08-22 16:43:10,481 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT fieldname, options, fieldtype FROM tabDocField WHERE parent='POS Opening Entry Detail'"]
+2026-08-22 16:43:23,307 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT dt, fieldname, options FROM `tabCustom Field` WHERE options IN (SELECT name FROM tabDocType WHERE module='URY') OR module='URY'"]
+2026-08-22 16:43:30,937 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, app_name FROM `tabModule Def` WHERE name='URY' OR app_name='ury'"]
+2026-08-22 16:43:36,644 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["UPDATE \`tabModule Def\` SET app_name='cpro' WHERE name='URY'"]
+2026-08-22 16:43:44,388 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.set_value --args ['Module Def', 'URY', 'app_name', 'cpro']
+2026-08-22 16:43:49,845 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["UPDATE tabDocType SET module='Cpro' WHERE module='URY'"]
+2026-08-22 16:43:55,024 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args ['{"items":[{"item_code":"shawerma","qty":2}]}']
+2026-08-22 16:44:03,689 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT dt, fieldname, options FROM `tabCustom Field` WHERE options IN (SELECT name FROM tabDocType WHERE custom=1 AND name NOT IN (SELECT name FROM tabDocType WHERE custom=0))"]
+2026-08-22 16:44:08,639 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, dt, fieldname, options FROM `tabCustom Field` WHERE fieldname IN ('custom_rooms', 'custom_room', 'restaurant', 'custom_ury_last_invoice', 'custom_ury_last_aggregator_invoice', 'restaurant_info', 'custom_sub_pos_close_entry') OR fieldname LIKE '%ury%'"]
+2026-08-22 16:44:13,685 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, dt, fieldname, options FROM `tabCustom Field` WHERE options LIKE 'URY%' OR options IN ('Multiple Rooms', 'Item Add On', 'POS Item Variants', 'Role Permitted', 'Aggregator Settings') OR fieldname LIKE '%ury%'"]
+2026-08-22 16:44:19,012 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["DELETE FROM \`tabCustom Field\` WHERE options LIKE 'URY%' OR options IN ('Multiple Rooms', 'Item Add On', 'POS Item Variants', 'Role Permitted', 'Aggregator Settings') OR fieldname LIKE '%ury%' OR name LIKE 'POS Opening Entry-restaurant%' OR name LIKE 'POS Opening Entry-custom_room%'"]
+2026-08-22 16:44:34,061 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.delete --args ['Custom Field', {'name': ['in', ['POS Invoice-custom_ury_order_number', 'POS Invoice-restaurant', 'POS Invoice-restaurant_info', 'POS Opening Entry-custom_room', 'POS Opening Entry-custom_rooms', 'POS Opening Entry-custom_sub_pos_close_entry', 'POS Opening Entry-custom_ury_last_aggregator_invoice', 'POS Opening Entry-custom_ury_last_invoice', 'POS Opening Entry-restaurant', 'POS Opening Entry-restaurant_info', 'POS Profile-restaurant', 'POS Profile-restaurant_info', 'Sales Invoice-restaurant', 'Sales Invoice-restaurant_info', 'Branch-custom_aggregator_settings', 'Branch-user', 'Item-custom_pos_add_on_items', 'Item-custom_pos_item_variants', 'POS Invoice-custom_restaurant_room', 'POS Invoice-restaurant_table', 'POS Profile-custom_recipients', 'POS Profile-printer_settings', 'POS Profile-role_allowed_for_billing', 'POS Profile-role_restricted_for_table_order', 'POS Profile-transfer_role_permissions', 'Price List-restaurant_menu', 'Sales Invoice-custom_restaurant_room', 'Sales Invoice-restaurant_table']]]
+2026-08-22 16:45:57,662 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args ['{"items":[{"item_code":"shawerma","qty":2}]}']
+2026-08-22 16:46:28,393 INFO /home/user/.local/bin/bench --site my_resturant clear-cache
+2026-08-22 16:50:50,418 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT item_code, price_list, price_list_rate, selling FROM `tabItem Price`"]
+2026-08-22 16:51:59,728 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, price_list_name, selling, buying FROM `tabPrice List`"]
+2026-08-22 16:52:06,120 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, menu_name, is_default, is_active FROM `tabCpro Menu`"]
+2026-08-22 16:52:25,826 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.menu.get_menu
+2026-08-22 16:52:32,001 INFO /home/user/.local/bin/bench --site my_resturant clear-cache
+2026-08-22 18:34:37,301 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT parent, user FROM `tabPOS Profile User`"]
+2026-08-22 18:34:48,486 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["INSERT INTO `tabPOS Profile User` (name, parent, parenttype, parentfield, user, idx) VALUES ('test_user_elyamani', '\u0627\u0644\u064a\u0645\u0627\u0646\u064a', 'POS Profile', 'applicable_for_users', 'Administrator', 1)"]
+2026-08-22 18:34:57,403 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.shift.get_current_shift
+2026-08-22 18:35:06,019 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.clear_cache
+2026-08-22 18:40:16,654 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT name, disabled, company, currency FROM `tabPOS Profile`"]
+2026-08-22 18:40:25,369 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.sql --args ["SELECT parent, user FROM `tabPOS Profile User`"]
+2026-08-22 19:36:48,341 INFO /home/user/.local/bin/bench --site my_resturant clear-cache
+2026-08-30 19:34:10,018 INFO /home/user/.local/bin/bench start
+2026-08-30 19:34:10,329 INFO /home/user/.local/bin/bench socketio
+2026-08-30 19:34:10,334 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 19:34:10,338 INFO /home/user/.local/bin/bench watch
+2026-08-30 19:34:10,339 INFO /home/user/.local/bin/bench schedule
+2026-08-30 19:34:10,341 INFO /home/user/.local/bin/bench worker
+2026-08-30 20:45:23,760 INFO /home/user/.local/bin/bench start
+2026-08-30 20:45:24,095 INFO /home/user/.local/bin/bench schedule
+2026-08-30 20:45:24,103 INFO /home/user/.local/bin/bench watch
+2026-08-30 20:45:24,127 INFO /home/user/.local/bin/bench worker
+2026-08-30 20:45:24,132 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 20:45:24,149 INFO /home/user/.local/bin/bench socketio
+2026-08-30 20:58:53,199 INFO /home/user/.local/bin/bench --site attia list-apps
+2026-08-30 20:58:54,095 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 20:58:58,303 INFO /home/user/.local/bin/bench --site my_resturant uninstall-app cpro --yes
+2026-08-30 20:59:07,265 INFO /home/user/.local/bin/bench --site my_resturant uninstall-app cpro --force --yes
+2026-08-30 20:59:44,638 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e SELECT * FROM `tabInstalled Application` WHERE app_name='cpro';
+2026-08-30 20:59:48,625 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e SELECT name, module FROM `tabDocType` WHERE module='Cpro' OR custom=0 AND name LIKE 'Cpro%';
+2026-08-30 20:59:52,703 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.delete --args ['Installed Application', {'app_name': 'cpro'}]
+2026-08-30 21:00:34,859 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:01:35,318 INFO /home/user/.local/bin/bench --site attia list-apps
+2026-08-30 21:01:36,028 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:01:45,440 INFO /home/user/.local/bin/bench --site my_resturant clear-cache
+2026-08-30 21:01:45,863 INFO /home/user/.local/bin/bench --site attia clear-cache
+2026-08-30 21:01:54,270 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:01:58,055 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e SELECT * FROM `tabInstalled Application`; SELECT * FROM `tabInstalled Applications`
+2026-08-30 21:02:51,702 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:03:05,298 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e SELECT * FROM `tabDefaultValue` WHERE defkey='installed_apps';
+2026-08-30 21:03:13,816 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabDefaultValue` SET defvalue='["frappe", "erpnext"]' WHERE defkey='installed_apps';
+2026-08-30 21:03:19,810 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabDefaultValue` SET defvalue='["frappe", "erpnext"]' WHERE name='imgu63usml';
+2026-08-30 21:03:23,587 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:03:30,811 INFO /home/user/.local/bin/bench --site my_resturant mariadb -e SELECT * FROM `tabDefaultValue` WHERE defkey='installed_apps';
+2026-08-30 21:03:41,484 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:09:09,917 INFO /home/user/.local/bin/bench --site attia migrate
+2026-08-30 21:10:04,382 INFO /home/user/.local/bin/bench start
+2026-08-30 21:10:44,231 INFO /home/user/.local/bin/bench start
+2026-08-30 21:14:35,819 INFO /home/user/.local/bin/bench restart
+2026-08-30 21:15:13,293 INFO /home/user/.local/bin/bench start
+2026-08-30 21:15:13,519 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:15:13,519 INFO /home/user/.local/bin/bench watch
+2026-08-30 21:15:13,520 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:15:13,526 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:15:13,526 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:15:36,949 INFO /home/user/.local/bin/bench start
+2026-08-30 21:15:37,179 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:15:37,180 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:15:37,181 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:15:37,182 INFO /home/user/.local/bin/bench watch
+2026-08-30 21:15:37,184 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:16:03,116 INFO /home/user/.local/bin/bench start
+2026-08-30 21:16:03,339 INFO /home/user/.local/bin/bench watch
+2026-08-30 21:16:03,343 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:16:03,344 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:16:03,346 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:16:03,355 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:16:51,785 INFO /home/user/.local/bin/bench start
+2026-08-30 21:16:52,023 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:16:52,024 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:16:52,026 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:16:52,028 INFO /home/user/.local/bin/bench watch
+2026-08-30 21:16:52,034 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:20:08,535 INFO /home/user/.local/bin/bench start
+2026-08-30 21:20:08,751 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:20:08,752 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:20:08,753 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:20:08,753 INFO /home/user/.local/bin/bench watch
+2026-08-30 21:20:08,760 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:22:21,606 INFO /home/user/.local/bin/bench --site my_resturant install-app cpro
+2026-08-30 21:22:45,995 INFO /home/user/.local/bin/bench --site my_resturant install-app cpro
+2026-08-30 21:22:57,077 INFO /home/user/.local/bin/bench --site my_resturant list-apps
+2026-08-30 21:23:21,631 INFO /home/user/.local/bin/bench start
+2026-08-30 21:23:21,845 INFO /home/user/.local/bin/bench serve --port 8000
+2026-08-30 21:23:21,852 INFO /home/user/.local/bin/bench schedule
+2026-08-30 21:23:21,853 INFO /home/user/.local/bin/bench worker
+2026-08-30 21:23:21,853 INFO /home/user/.local/bin/bench socketio
+2026-08-30 21:23:21,854 INFO /home/user/.local/bin/bench watch
+2026-09-03 22:24:10,920 INFO /home/user/.local/bin/bench start
+2026-09-03 22:24:11,319 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-03 22:24:11,323 INFO /home/user/.local/bin/bench socketio
+2026-09-03 22:24:11,326 INFO /home/user/.local/bin/bench watch
+2026-09-03 22:24:11,340 INFO /home/user/.local/bin/bench schedule
+2026-09-03 22:24:11,352 INFO /home/user/.local/bin/bench worker
+2026-09-04 06:25:41,160 INFO /home/user/.local/bin/bench start
+2026-09-04 06:25:41,696 INFO /home/user/.local/bin/bench socketio
+2026-09-04 06:25:41,700 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-04 06:25:41,702 INFO /home/user/.local/bin/bench watch
+2026-09-04 06:25:41,703 INFO /home/user/.local/bin/bench schedule
+2026-09-04 06:25:41,713 INFO /home/user/.local/bin/bench worker
+2026-09-04 16:13:37,790 INFO /home/user/.local/bin/bench start
+2026-09-04 16:22:38,551 INFO /home/user/.local/bin/bench restart
+2026-09-04 16:22:44,268 INFO /home/user/.local/bin/bench start
+2026-09-04 16:22:54,261 INFO /home/user/.local/bin/bench stop
+2026-09-04 16:23:24,596 INFO /home/user/.local/bin/bench start
+2026-09-04 16:23:37,525 INFO /home/user/.local/bin/bench start
+2026-09-04 16:24:25,892 INFO /home/user/.local/bin/bench start
+2026-09-04 16:44:56,825 INFO /home/user/.local/bin/bench start
+2026-09-04 16:44:57,062 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-04 16:44:57,066 INFO /home/user/.local/bin/bench watch
+2026-09-04 16:44:57,074 INFO /home/user/.local/bin/bench socketio
+2026-09-04 16:44:57,075 INFO /home/user/.local/bin/bench schedule
+2026-09-04 16:44:57,077 INFO /home/user/.local/bin/bench worker
+2026-09-04 17:07:33,840 INFO /home/user/.local/bin/bench clear-cache
+2026-09-04 17:25:30,750 INFO /home/user/.local/bin/bench clear-cache
+2026-09-04 18:29:21,247 INFO /home/user/.local/bin/bench start
+2026-09-04 18:29:21,563 INFO /home/user/.local/bin/bench socketio
+2026-09-04 18:29:21,564 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-04 18:29:21,566 INFO /home/user/.local/bin/bench schedule
+2026-09-04 18:29:21,574 INFO /home/user/.local/bin/bench watch
+2026-09-04 18:29:21,575 INFO /home/user/.local/bin/bench worker
+2026-09-04 18:34:22,553 INFO /home/user/.local/bin/bench execute cpro.api.menu.get_menu
+2026-09-04 18:55:38,019 INFO /home/user/.local/bin/bench --site _76210c0fca237bd0 execute frappe.sessions.get_sessions_to_clear
+2026-09-04 18:58:04,656 INFO /home/user/.local/bin/bench --site attia set-admin-password admin
+2026-09-04 18:58:05,432 INFO /home/user/.local/bin/bench --site my_resturant set-admin-password admin
+2026-09-04 19:01:53,363 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_all --args ['Cpro POS Opening Shift']
+2026-09-04 19:04:15,201 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Invoice']
+2026-09-04 19:05:16,114 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Opening Entry']
+2026-09-04 19:05:37,041 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Opening Entry']
+2026-09-04 19:05:37,500 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Closing Entry']
+2026-09-04 19:06:12,223 INFO /home/user/.local/bin/bench restart
+2026-09-04 19:13:53,663 INFO /home/user/.local/bin/bench restart
+2026-09-04 19:15:15,035 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['POS Profile', 'كاشير ههيا', 'branch']
+2026-09-04 19:15:28,787 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['POS Profile', 'اليماني', 'branch']
+2026-09-04 19:15:41,717 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_all --args ['POS Profile', ['name', 'branch']]
+2026-09-04 19:15:54,023 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_all --args ['Branch']
+2026-09-04 19:16:14,719 INFO /home/user/.local/bin/bench restart
+2026-09-04 19:58:04,674 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['Branch', {}, 'name']
+2026-09-04 19:58:39,640 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.shift.open_shift --args ['zed', '[{"mode_of_payment": "Cash", "opening_amount": 0}]']
+2026-09-04 20:00:32,014 INFO /home/user/.local/bin/bench --site my_resturant execute test_shift.py
+2026-09-04 20:02:34,996 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.shift.open_shift --args ['zed', '[{"mode_of_payment": "Cash", "opening_amount": 0}]']
+2026-09-04 20:03:32,979 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Opening Entry']
+2026-09-04 20:04:20,691 INFO /home/user/.local/bin/bench --site my_resturant execute test_shift.py
+2026-09-04 20:04:33,768 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_meta --args ['POS Profile']
+2026-09-04 20:05:09,344 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.test_debug.run
+2026-09-04 20:06:16,696 INFO /home/user/.local/bin/bench start
+2026-09-04 20:06:16,987 INFO /home/user/.local/bin/bench watch
+2026-09-04 20:06:16,988 INFO /home/user/.local/bin/bench socketio
+2026-09-04 20:06:17,000 INFO /home/user/.local/bin/bench worker
+2026-09-04 20:06:17,006 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-04 20:06:17,016 INFO /home/user/.local/bin/bench schedule
+2026-09-04 20:10:13,453 INFO /home/user/.local/bin/bench --site my_resturant execute frappe.get_all --args ['Error Log', {'fields': ['method', 'error']}] --kwargs {'limit': 1, 'order_by': 'creation desc'}
+2026-09-04 20:31:35,361 INFO /home/user/.local/bin/bench --site my_resturant execute allow_negative_stock.run
+2026-09-04 20:32:03,944 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.allow_negative_stock.run
+2026-09-04 20:34:23,132 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.test_totals.run
+2026-09-04 21:19:13,228 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.setup_management_links.run
+2026-09-04 22:02:07,445 INFO /home/user/.local/bin/bench --site my_resturant execute cpro.api.management.get_management_links
+2026-09-05 14:35:07,584 INFO /home/user/.local/bin/bench start
+2026-09-05 14:35:58,200 INFO /home/user/.local/bin/bench start
+2026-09-05 14:35:58,630 INFO /home/user/.local/bin/bench socketio
+2026-09-05 14:35:58,639 INFO /home/user/.local/bin/bench schedule
+2026-09-05 14:35:58,649 INFO /home/user/.local/bin/bench worker
+2026-09-05 14:35:58,653 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-05 14:35:58,657 INFO /home/user/.local/bin/bench watch
+2026-09-05 14:36:29,397 INFO /home/user/.local/bin/bench start
+2026-09-05 14:36:29,737 INFO /home/user/.local/bin/bench schedule
+2026-09-05 14:36:29,740 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-05 14:36:29,741 INFO /home/user/.local/bin/bench worker
+2026-09-05 14:36:29,752 INFO /home/user/.local/bin/bench socketio
+2026-09-05 14:36:29,774 INFO /home/user/.local/bin/bench watch
+2026-09-05 14:42:30,584 INFO /home/user/.local/bin/bench schedule
+2026-09-05 14:43:01,698 INFO /home/user/.local/bin/bench --site my_resturant enable-scheduler
+2026-09-05 14:43:16,452 INFO /home/user/.local/bin/bench schedule
+2026-09-05 14:43:26,441 INFO /home/user/.local/bin/bench schedule --help
+2026-09-05 14:45:00,137 INFO /home/user/.local/bin/bench start
+2026-09-05 14:45:00,605 INFO /home/user/.local/bin/bench socketio
+2026-09-05 14:45:00,609 INFO /home/user/.local/bin/bench worker
+2026-09-05 14:45:00,610 INFO /home/user/.local/bin/bench watch
+2026-09-05 14:45:00,612 INFO /home/user/.local/bin/bench schedule
+2026-09-05 14:45:00,620 INFO /home/user/.local/bin/bench serve --port 8000
+2026-09-13 02:04:38,920 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:05:20,391 INFO /home/mohamed/.local/bin/bench setup --help
+2026-09-13 02:05:36,283 INFO /home/mohamed/.local/bin/bench --version
+2026-09-13 02:09:34,562 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:09:34,719 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 02:09:34,723 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 02:09:34,723 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 02:09:34,727 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:09:34,731 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 02:10:42,250 INFO /home/mohamed/.local/bin/bench setup env --help
+2026-09-13 02:13:59,386 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:13:59,562 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 02:13:59,563 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 02:13:59,564 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 02:13:59,565 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 02:13:59,575 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:18:16,668 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:18:16,842 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 02:18:16,844 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 02:18:16,847 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 02:18:16,848 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 02:18:16,848 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:35:20,843 INFO /home/mohamed/.local/bin/bench version
+2026-09-13 02:36:15,762 INFO /home/mohamed/.local/bin/bench serve --help
+2026-09-13 02:36:22,856 INFO /home/mohamed/.local/bin/bench schedule --help
+2026-09-13 02:36:23,189 INFO /home/mohamed/.local/bin/bench worker --help
+2026-09-13 02:36:29,690 INFO /home/mohamed/.local/bin/bench socketio --help
+2026-09-13 02:36:30,222 INFO /home/mohamed/.local/bin/bench watch --help
+2026-09-13 02:36:39,087 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:38:41,426 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:38:47,344 INFO /home/mohamed/.local/bin/bench build --app frappe
+2026-09-13 02:38:59,564 INFO /home/mohamed/.local/bin/bench build --app frappe
+2026-09-13 02:39:22,972 INFO /home/mohamed/.local/bin/bench build --app erpnext
+2026-09-13 02:39:51,407 INFO /home/mohamed/.local/bin/bench build --app erpnext
+2026-09-13 02:40:22,763 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:40:22,917 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 02:40:22,918 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 02:40:22,919 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:40:22,930 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 02:40:22,933 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 02:41:45,551 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 02:41:45,677 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 02:41:45,678 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 02:41:45,678 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 02:41:45,688 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 02:41:45,695 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 02:51:17,765 INFO /home/mohamed/.local/bin/bench --site my_resturant set-admin-password admin
+2026-09-13 02:51:29,623 INFO /home/mohamed/.local/bin/bench --site attia set-admin-password admin
+2026-09-13 03:09:19,918 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 03:09:20,063 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 03:09:20,065 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 03:09:20,065 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 03:09:20,065 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 03:09:20,068 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 03:09:49,097 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 03:12:15,542 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 03:13:00,712 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 03:13:00,854 INFO /home/mohamed/.local/bin/bench worker
+2026-09-13 03:13:00,856 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 03:13:00,861 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 03:13:00,861 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 03:13:00,862 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 03:14:03,473 INFO /home/mohamed/.local/bin/bench start
+2026-09-13 03:14:03,600 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-13 03:14:03,601 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-13 03:14:03,603 INFO /home/mohamed/.local/bin/bench watch
+2026-09-13 03:14:03,607 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-13 03:14:03,607 INFO /home/mohamed/.local/bin/bench worker
+2026-09-14 00:30:44,668 INFO /home/mohamed/.local/bin/bench start
+2026-09-14 00:30:45,160 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-14 00:30:45,160 INFO /home/mohamed/.local/bin/bench worker
+2026-09-14 00:30:45,161 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-14 00:30:45,162 INFO /home/mohamed/.local/bin/bench watch
+2026-09-14 00:30:45,165 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-14 00:54:26,952 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, doc_type, default_print_format FROM `tabPrint Format` WHERE doc_type='POS Invoice' OR doc_type='Sales Invoice';
+2026-09-14 00:54:35,689 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, doc_type, standard FROM `tabPrint Format` WHERE doc_type IN ('POS Invoice', 'Sales Invoice');
+2026-09-14 00:54:42,532 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, print_format, letter_head FROM `tabPOS Profile`;
+2026-09-14 00:54:51,093 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.get_print --args ['POS Invoice', frappe.db.get_value('POS Invoice', {}, 'name')]
+2026-09-14 00:55:35,683 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -sN -e "SELECT name FROM \`tabPOS Invoice\` ORDER BY creation DESC LIMIT 1"
+2026-09-14 00:55:36,297 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.get_invoice_print --args ['/usr/bin/mariadb from 11.8.6-MariaDB, client 15.2 for debian-linux-gnu (x86_64) using  EditLine wrapper
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Usage: /usr/bin/mariadb [OPTIONS] [database]
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
+The following groups are read: mysql mariadb-client client client-server client-mariadb
+The following options may be given as the first argument:
+--print-defaults          Print the program argument list and exit.
+--no-defaults             Don't read default options from any option file.
+The following specify which files/extra groups are read (specified before remaining options):
+--defaults-file=#         Only read default options from the given file #.
+--defaults-extra-file=#   Read this file after the global files are read.
+--defaults-group-suffix=# Additionally read default groups with # appended as a suffix.
+
+  -?, --help          Display this help and exit.
+  -I, --help          Synonym for -?
+  --abort-source-on-error 
+                      Abort 'source filename' operations in case of errors
+  --auto-rehash       Enable automatic rehashing. One doesn't need to use
+                      'rehash' to get table and field completion, but startup
+                      and reconnecting may take a longer time.
+                      (Defaults to on; use --skip-auto-rehash to disable.)
+  -A, --no-auto-rehash 
+                      No automatic rehashing. One has to use 'rehash' to get
+                      table and field completion. This gives a quicker start of
+                      mysql and disables rehashing on reconnect.
+  --auto-vertical-output 
+                      Automatically switch to vertical output mode if the
+                      result is wider than the terminal width.
+  -B, --batch         Don't use history file. Disable interactive behavior.
+                      (Enables --silent.)
+  --binary-as-hex     Print binary data as hex
+  --binary-mode       Binary mode allows certain character sequences to be
+                      processed as data that would otherwise be treated with a
+                      special meaning by the parser. Specifically, this switch
+                      turns off parsing of all client commands except \C and
+                      DELIMITER in non-interactive mode (i.e., when binary mode
+                      is combined with either 1) piped input, 2) the --batch
+                      mysql option, or 3) the 'source' command). Also, in
+                      binary mode, occurrences of '\r\n' and ASCII '\0' are
+                      preserved within strings, whereas by default, '\r\n' is
+                      translated to '\n' and '\0' is disallowed in user input.
+  --character-sets-dir=name 
+                      Directory for character set files.
+  --column-names      Write column names in results.
+                      (Defaults to on; use --skip-column-names to disable.)
+  -N, --skip-column-names 
+                      Don't write column names in results.
+  --column-type-info  Display column type information.
+  -c, --comments      Preserve comments. Send comments to the server. The
+                      default is --skip-comments (discard comments), enable
+                      with --comments.
+  -C, --compress      Use compression in server/client protocol.
+  --connect-expired-password 
+                      Notify the server that this client is prepared to handle
+                      expired password sandbox mode even if --batch was
+                      specified.
+  --connect-timeout=# Number of seconds before connection timeout.
+  -D, --database=name Database to use.
+  -#, --debug[=#]     This is a non-debug version. Catch this and exit.
+  --debug-check       Check memory and open file usage at exit.
+  -T, --debug-info    Print some debug info at exit.
+  --default-auth=name Default authentication client-side plugin to use.
+  --default-character-set=name 
+                      Set the default character set.
+  --delimiter=name    Delimiter to be used.
+  --enable-cleartext-plugin 
+                      Obsolete option. Exists only for MySQL compatibility.
+  -e, --execute=name  Execute command and quit. (Disables --force and history
+                      file.)
+  -f, --force         Continue even if we get an SQL error. Sets
+                      abort-source-on-error to 0
+  -h, --host=name     Connect to host. Defaults in the following order:
+                      $MARIADB_HOST, $MYSQL_HOST, and then localhost
+  -H, --html          Produce HTML output.
+  -i, --ignore-spaces Ignore space after function names.
+  --init-command=name SQL Command to execute when connecting to MariaDB server.
+                      Will automatically be re-executed when reconnecting.
+  --line-numbers      Write line numbers for errors.
+                      (Defaults to on; use --skip-line-numbers to disable.)
+  -L, --skip-line-numbers 
+                      Don't write line number for errors.
+  --local-infile      Enable LOAD DATA LOCAL INFILE.
+  --max-allowed-packet=# 
+                      The maximum packet length to send to or receive from
+                      server.
+  --max-join-size=#   Automatic limit for rows in a join when using
+                      --safe-updates.
+  -G, --named-commands 
+                      Enable named commands. Named commands mean this program's
+                      internal commands; see mysql> help . When enabled, the
+                      named commands can be used from any line of the query,
+                      otherwise only from the first line, before an enter.
+                      Disable with --disable-named-commands. This option is
+                      disabled by default.
+  --net-buffer-length=# 
+                      The buffer size for TCP/IP and socket communication.
+  -b, --no-beep       Turn off beep on error.
+  -o, --one-database  Ignore statements except those that occur while the
+                      default database is the one named at the command line.
+  --pager[=name]      Pager to use to display results. If you don't supply an
+                      option, the default pager is taken from your ENV variable
+                      PAGER. Valid pagers are less, more, cat [> filename],
+                      etc. See interactive help (\h) also. This option does not
+                      work in batch mode. Disable with --disable-pager. This
+                      option is disabled by default.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
+  --plugin-dir=name   Directory for client-side plugins.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  --print-query-on-error 
+                      Print the query if there was an error. Is only enabled in
+                      --batch mode if verbose is not set (as then the query
+                      would be printed anyway)
+                      (Defaults to on; use --skip-print-query-on-error to disable.)
+  --progress-reports  Get progress reports for long running commands (like
+                      ALTER TABLE)
+                      (Defaults to on; use --skip-progress-reports to disable.)
+  --prompt=name       Set the command line prompt to this value.
+  --protocol=name     The protocol to use for connection (tcp, socket, pipe).
+  -q, --quick         Don't cache result, print it row by row. This may slow
+                      down the server if the output is suspended. Doesn't use
+                      history file.
+  --quick-max-column-width=# 
+                      Maximum number of characters displayed in a column header
+                      when using --quick
+  -r, --raw           Write fields without conversion. Used with --batch.
+  --reconnect         Reconnect if the connection is lost.
+                      (Defaults to on; use --skip-reconnect to disable.)
+  -U, --safe-updates  Only allow UPDATE and DELETE that uses keys.
+  -U, --i-am-a-dummy  Synonym for option --safe-updates, -U.
+  --sandbox           Disallow commands that access the file system (except \P
+                      without an argument and \e).
+  --secure-auth       Refuse client connecting to server if it uses old
+                      (pre-4.1.1) protocol.
+  --select-limit=#    Automatic limit for SELECT when using --safe-updates.
+  --server-arg=name   Send embedded server this as a parameter.
+  --show-query-costs  Show query cost after every statement.
+  --show-warnings     Show warnings after every statement.
+  --sigint-ignore     Ignore SIGINT (CTRL-C).
+  -s, --silent        Be more silent. Print results with a tab as separator,
+                      each row on new line.
+  -S, --socket=name   The socket file to use for connection.
+  --ssl               Enable SSL for connection (automatically enabled with
+                      other flags).
+                      (Defaults to on; use --skip-ssl to disable.)
+  --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies
+                      --ssl).
+  --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
+  --ssl-cert=name     X509 cert in PEM format (implies --ssl).
+  --ssl-cipher=name   SSL cipher to use (implies --ssl).
+  --ssl-key=name      X509 key in PEM format (implies --ssl).
+  --ssl-crl=name      Certificate revocation list (implies --ssl).
+  --ssl-crlpath=name  Certificate revocation list path (implies --ssl).
+  --tls-version=name  TLS protocol version for secure connection.
+  --ssl-fp=name       Server certificate fingerprint (implies --ssl).
+  --ssl-fplist=name   File with accepted server certificate fingerprints, one
+                      per line (implies --ssl).
+  --ssl-verify-server-cert 
+                      Verify server's certificate to prevent man-in-the-middle
+                      attacks
+                      (Defaults to on; use --skip-ssl-verify-server-cert to disable.)
+  -t, --table         Output in table format.
+  --tee=name          Append everything into outfile. See interactive help (\h)
+                      also. Does not work in batch mode. Disable with
+                      --disable-tee. This option is disabled by default.
+  -n, --unbuffered    Flush buffer after each query.
+  -u, --user=name     User for login if not current user.
+  -v, --verbose       Write more. (-v -v -v gives the table output format).
+  -V, --version       Output version information and exit.
+  -E, --vertical      Print the output of a query (rows) vertically.
+  -w, --wait          Wait and retry if connection is down.
+  -X, --xml           Produce XML output.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+abort-source-on-error             FALSE
+auto-rehash                       FALSE
+auto-vertical-output              FALSE
+binary-as-hex                     FALSE
+binary-mode                       FALSE
+character-sets-dir                (No default value)
+column-names                      FALSE
+column-type-info                  FALSE
+comments                          FALSE
+compress                          FALSE
+connect-expired-password          FALSE
+connect-timeout                   0
+database                          (No default value)
+debug-check                       FALSE
+debug-info                        FALSE
+default-auth                      (No default value)
+default-character-set             utf8mb4
+delimiter                         ;
+force                             FALSE
+host                              127.0.0.1
+html                              FALSE
+ignore-spaces                     FALSE
+init-command                      (No default value)
+line-numbers                      TRUE
+local-infile                      FALSE
+max-allowed-packet                16777216
+max-join-size                     1000000
+named-commands                    FALSE
+net-buffer-length                 16384
+no-beep                           FALSE
+plugin-dir                        (No default value)
+port                              3306
+print-query-on-error              TRUE
+progress-reports                  FALSE
+prompt                            \N [\d]> 
+protocol                          
+quick                             FALSE
+quick-max-column-width            9223372036854775807
+raw                               FALSE
+reconnect                         FALSE
+safe-updates                      TRUE
+i-am-a-dummy                      TRUE
+sandbox                           FALSE
+secure-auth                       FALSE
+select-limit                      1000
+show-query-costs                  FALSE
+show-warnings                     FALSE
+sigint-ignore                     FALSE
+socket                            /run/mysqld/mysqld.sock
+ssl                               TRUE
+ssl-ca                            (No default value)
+ssl-capath                        (No default value)
+ssl-cert                          (No default value)
+ssl-cipher                        (No default value)
+ssl-key                           (No default value)
+ssl-crl                           (No default value)
+ssl-crlpath                       (No default value)
+tls-version                       (No default value)
+ssl-fp                            (No default value)
+ssl-fplist                        (No default value)
+ssl-verify-server-cert            TRUE
+table                             FALSE
+unbuffered                        FALSE
+user                              _76210c0fca237bd0
+vertical                          FALSE
+xml                               FALSE']
+2026-09-14 00:55:43,542 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.get_value --args ['POS Invoice', {}, 'name']
+2026-09-14 00:55:50,693 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.get_invoice_print --args ['ACC-PSINV-2026-00021']
+2026-09-14 00:58:04,356 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args {'order_data': {'items': [{'item_code': frappe.db.get_value('Item', {}, 'name'), 'qty': 1, 'rate': 50}], 'print_invoice': 1}}
+2026-09-14 00:58:11,836 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args [{'items': [{'item_code': frappe.db.get_value('Item', {}, 'name'), 'qty': 1, 'rate': 50}], 'print_invoice': 1}]
+2026-09-14 00:58:20,045 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, pos_profile, status, docstatus FROM `tabPOS Opening Entry` ORDER BY creation DESC LIMIT 5;
+2026-09-14 00:58:27,249 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.save_order --args [{'pos_profile': 'zed', 'items': [{'item_code': frappe.db.get_value('Item', {}, 'name'), 'qty': 1, 'rate': 50}], 'print_invoice': 1}]
+2026-09-14 01:23:05,053 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabCpro KOT`;
+2026-09-14 01:23:45,671 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.kitchen.get_active_kots
+2026-09-14 01:25:13,172 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.pos.get_pos_board_orders
+2026-09-14 01:25:21,398 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.kitchen.get_kitchen_board_tickets
+2026-09-14 02:30:21,931 INFO /home/mohamed/.local/bin/bench execute frappe.core.doctype.error_log.error_log.get_error_logs
+2026-09-14 02:30:33,421 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation'], order_by='creation desc', limit=1)
+2026-09-14 02:30:44,165 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=3)
+2026-09-14 02:40:49,283 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Print Format', filters={'doc_type': 'POS Invoice'}, fields=['name', 'print_format_builder', 'module'])
+2026-09-14 02:41:44,519 INFO /home/mohamed/.local/bin/bench execute create_pf.create_print_format
+2026-09-14 02:45:19,028 INFO /home/mohamed/.local/bin/bench execute create_pf.create_print_format
+2026-09-14 02:45:43,291 INFO /home/mohamed/.local/bin/bench --site my_bench execute create_pf.create_print_format
+2026-09-14 02:57:09,247 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=1)
+2026-09-14 02:57:37,078 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=1)
+2026-09-14 03:12:34,957 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=1)
+2026-09-14 03:13:41,011 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=1)
+2026-09-14 03:14:04,549 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=3)
+2026-09-14 03:14:32,208 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', filters={'method': ['like', '%generate_invoice_html%']}, fields=['error', 'creation'], order_by='creation desc', limit=1)
+2026-09-14 03:14:43,067 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_list('Error Log', fields=['error', 'creation', 'method'], order_by='creation desc', limit=1)
+2026-09-14 09:06:19,466 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.setup_management_links.run
+2026-09-14 09:07:07,032 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.setup_management_links.run
+2026-09-14 09:10:37,386 INFO /home/mohamed/.local/bin/bench --site my_resturant execute apps.cpro.cpro.api.setup_management_links.run
+2026-09-14 09:11:09,968 INFO /home/mohamed/.local/bin/bench --site my_resturant execute apps.cpro.cpro.api.setup_management_links.run
+2026-09-14 09:11:21,849 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.setup_management_links.run
+2026-09-14 09:11:45,546 INFO /home/mohamed/.local/bin/bench --site my_resturant execute apps.cpro.cpro.api.setup_management_links.run
+2026-09-14 09:11:58,520 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.api.setup_management_links.run
+2026-09-15 00:40:14,278 INFO /home/mohamed/.local/bin/bench start
+2026-09-15 00:40:14,628 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-15 00:40:14,632 INFO /home/mohamed/.local/bin/bench worker
+2026-09-15 00:40:14,635 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-15 00:40:14,645 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-15 00:40:14,651 INFO /home/mohamed/.local/bin/bench watch
+2026-09-15 02:02:15,858 INFO /home/mohamed/.local/bin/bench --site all mysql -e SELECT name, status, user, pos_profile FROM `tabPOS Opening Entry` WHERE status = 'Open';
+2026-09-15 02:02:26,402 INFO /home/mohamed/.local/bin/bench execute frappe.db.get_all --args ['POS Opening Entry', {'filters': {'status': 'Open'}, 'fields': ['name', 'user', 'pos_profile']}]
+2026-09-15 02:02:36,292 INFO /home/mohamed/.local/bin/bench execute /tmp/check_pos.py
+2026-09-15 02:02:50,536 INFO /home/mohamed/.local/bin/bench --site cpro.localhost execute frappe.db.sql('SELECT name, status FROM `tabPOS Opening Entry` WHERE status=\'Open\'')
+2026-09-15 02:03:31,767 INFO /home/mohamed/.local/bin/bench execute /tmp/fix_pos.py
+2026-09-15 02:03:45,395 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 02:08:06,062 INFO /home/mohamed/.local/bin/bench execute /tmp/test_open.py
+2026-09-15 02:08:29,622 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 02:09:06,254 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.sql('SELECT method, error FROM `tabError Log` ORDER BY creation DESC LIMIT 1', as_dict=True)
+2026-09-15 02:09:21,645 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.sql('SELECT method, error FROM `tabError Log` WHERE error LIKE \'%User None not found%\' ORDER BY creation DESC LIMIT 1', as_dict=True)
+2026-09-15 02:57:33,665 INFO /home/mohamed/.local/bin/bench execute /tmp/test_tax.py
+2026-09-15 02:57:45,514 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:02:26,961 INFO /home/mohamed/.local/bin/bench --site my_resturant execute /tmp/test_submit.py
+2026-09-15 03:02:39,314 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:05:24,397 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:05:47,880 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:08:08,813 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:10:49,599 INFO /home/mohamed/.local/bin/bench --site my_resturant clear-cache
+2026-09-15 03:20:33,006 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:21:04,461 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:21:47,825 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.check_p.run
+2026-09-15 03:22:36,039 INFO /home/mohamed/.local/bin/bench --site my_resturant console
+2026-09-15 03:22:51,252 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.check_submit.run
+2026-09-15 03:24:05,394 INFO /home/mohamed/.local/bin/bench --site my_resturant clear-cache
+2026-09-15 03:38:59,174 INFO /home/mohamed/.local/bin/bench --site my_resturant execute /tmp/debug_pos_submit.run
+2026-09-15 03:39:10,913 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.debug_pos.run
+2026-09-15 03:39:42,733 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.debug_pos2.run
+2026-09-15 03:40:38,613 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.debug_pos_final.run
+2026-09-15 03:41:02,141 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.get_item.run
+2026-09-15 03:41:16,672 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.debug_pos_final.run
+2026-09-15 03:41:55,994 INFO /home/mohamed/.local/bin/bench --site my_resturant clear-cache
+2026-09-17 07:06:02,733 INFO /home/mohamed/.local/bin/bench start
+2026-09-17 07:06:03,063 INFO /home/mohamed/.local/bin/bench watch
+2026-09-17 07:06:03,069 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-17 07:06:03,070 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-17 07:06:03,076 INFO /home/mohamed/.local/bin/bench worker
+2026-09-17 07:06:03,078 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-17 13:57:45,624 INFO /home/mohamed/.local/bin/bench start
+2026-09-17 13:57:45,797 INFO /home/mohamed/.local/bin/bench watch
+2026-09-17 13:57:45,799 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-17 13:57:45,799 INFO /home/mohamed/.local/bin/bench worker
+2026-09-17 13:57:45,803 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-17 13:57:45,804 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-17 14:37:27,583 INFO /home/mohamed/.local/bin/bench --site elmo execute frappe.db.get_list --kwargs {"doctype": "Cpro Management Link", "fields": ["name", "title", "route", "target_doctype"]}
+2026-09-17 14:39:35,254 INFO /home/mohamed/.local/bin/bench --site attia execute frappe.db.get_list --kwargs {"doctype": "Cpro Management Link", "fields": ["name", "title", "route", "target_doctype"]}
+2026-09-17 14:41:08,629 INFO /home/mohamed/.local/bin/bench --site attia execute frappe.db.get_list --kwargs {"doctype": "DocType", "fields": ["name"], "filters": [["name", "like", "%Room%"]]}
+2026-09-17 14:41:33,191 INFO /home/mohamed/.local/bin/bench --site attia execute frappe.db.get_list --kwargs {"doctype": "DocType", "fields": ["name"], "filters": [["name", "like", "%Table%"]]}
+2026-09-17 14:43:10,283 INFO /home/mohamed/.local/bin/bench --site attia execute frappe.db.get_list --kwargs {"doctype": "DocType", "fields": ["name"], "filters": [["name", "like", "Cpro %"]]}
+2026-09-17 14:57:20,991 INFO /home/mohamed/.local/bin/bench --site attia execute frappe.db.get_list --kwargs {"doctype": "Custom Field", "fields": ["fieldname", "fieldtype", "label"], "filters": [["dt", "=", "Branch"]]}
+2026-09-17 14:58:05,666 INFO /home/mohamed/.local/bin/bench --site attia execute cpro.add_branch_custom_fields.run
+2026-09-17 14:59:19,451 INFO /home/mohamed/.local/bin/bench --site attia execute cpro.test_update.run
+2026-09-17 15:03:11,323 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.check_links.run
+2026-09-17 15:03:45,105 INFO /home/mohamed/.local/bin/bench --site my_resturant execute cpro.add_branch_custom_fields.run
+2026-09-17 15:18:51,937 INFO /home/mohamed/.local/bin/bench start
+2026-09-17 15:18:52,107 INFO /home/mohamed/.local/bin/bench watch
+2026-09-17 15:18:52,113 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-17 15:18:52,113 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-17 15:18:52,115 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-17 15:18:52,116 INFO /home/mohamed/.local/bin/bench worker
+2026-09-21 02:47:54,643 INFO /home/mohamed/.local/bin/bench start
+2026-09-21 02:47:54,805 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-21 02:47:54,806 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-21 02:47:54,806 INFO /home/mohamed/.local/bin/bench worker
+2026-09-21 02:47:54,815 INFO /home/mohamed/.local/bin/bench watch
+2026-09-21 02:47:54,816 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-23 14:06:16,148 INFO /home/mohamed/.local/bin/bench start
+2026-09-23 14:06:16,301 INFO /home/mohamed/.local/bin/bench serve --port 8000
+2026-09-23 14:06:16,304 INFO /home/mohamed/.local/bin/bench socketio
+2026-09-23 14:06:16,304 INFO /home/mohamed/.local/bin/bench watch
+2026-09-23 14:06:16,304 INFO /home/mohamed/.local/bin/bench schedule
+2026-09-23 14:06:16,305 INFO /home/mohamed/.local/bin/bench worker
+2026-09-23 14:09:17,193 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT error FROM `tabError Log` ORDER BY creation DESC LIMIT 1;
+2026-09-23 14:13:58,359 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.sql('''UPDATE `tabPOS Invoice` SET cpro_pos_opening_shift = %s, pos_opening_shift = %s WHERE ifnull(cpro_pos_opening_shift, '') = '' AND creation >= CURDATE()''', (frappe.db.get_value('POS Opening Entry', {'status': 'Open', 'docstatus': 1}, 'name'), frappe.db.get_value('POS Opening Entry', {'status': 'Open', 'docstatus': 1}, 'name'))); frappe.db.commit()
+2026-09-23 14:14:10,208 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabPOS Invoice` SET cpro_pos_opening_shift = (SELECT name FROM `tabPOS Opening Entry` WHERE status='Open' and docstatus=1 ORDER BY creation DESC LIMIT 1), pos_opening_shift = (SELECT name FROM `tabPOS Opening Entry` WHERE status='Open' and docstatus=1 ORDER BY creation DESC LIMIT 1) WHERE ifnull(cpro_pos_opening_shift, '') = '' AND creation >= CURDATE();
+2026-09-23 14:14:21,369 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabPOS Invoice` SET cpro_pos_opening_shift = (SELECT name FROM `tabPOS Opening Entry` WHERE status='Open' and docstatus=1 ORDER BY creation DESC LIMIT 1) WHERE ifnull(cpro_pos_opening_shift, '') = '' AND creation >= CURDATE();
+2026-09-23 14:17:50,920 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabPOS Invoice`;
+2026-09-23 14:18:01,829 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, docstatus, cpro_pos_opening_shift, grand_total FROM `tabPOS Invoice` WHERE creation >= CURDATE();
+2026-09-23 14:18:11,234 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, pos_opening_entry, grand_total, net_total FROM `tabPOS Closing Entry` ORDER BY creation DESC LIMIT 1;
+2026-09-23 14:18:21,797 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabPOS Invoice`;
+2026-09-23 14:21:16,847 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT options FROM `tabDocField` WHERE parent='POS Invoice' AND fieldname='cpro_pos_opening_shift';
+2026-09-23 14:21:26,679 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT options FROM `tabCustom Field` WHERE dt='POS Invoice' AND fieldname='cpro_pos_opening_shift';
+2026-09-23 14:21:47,136 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabCpro POS Opening Shift`;
+2026-09-23 14:22:21,688 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabCustom Field` SET options='POS Opening Entry' WHERE fieldname='cpro_pos_opening_shift' AND dt='POS Invoice';
+2026-09-23 14:22:30,444 INFO /home/mohamed/.local/bin/bench --site my_resturant clear-cache
+2026-09-23 14:24:52,674 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT allow_negative_stock FROM `tabStock Settings`;
+2026-09-23 14:25:04,543 INFO /home/mohamed/.local/bin/bench --site my_resturant execute frappe.db.sql('UPDATE `tabItem` SET is_zero_valuation_rate = 1'); frappe.db.commit()
+2026-09-23 14:25:13,390 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabItem` SET is_zero_valuation_rate = 1;
+2026-09-23 14:25:25,413 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabItem`;
+2026-09-23 14:25:39,445 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabPOS Invoice Item`;
+2026-09-23 14:25:52,181 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabPOS Invoice Item` SET allow_zero_valuation_rate = 1;
+2026-09-23 14:26:02,256 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e UPDATE `tabPOS Invoice Item` SET allow_zero_valuation_rate = 1 WHERE name != '';
+2026-09-23 14:26:12,146 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SET SQL_SAFE_UPDATES = 0; UPDATE `tabPOS Invoice Item` SET allow_zero_valuation_rate = 1;
+2026-09-23 14:27:17,763 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabItem`;
+2026-09-23 14:27:28,437 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT fieldname FROM `tabDocField` WHERE parent='Stock Settings' AND fieldname LIKE '%zero%';
+2026-09-23 14:27:38,941 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT fieldname FROM `tabDocField` WHERE parent='Item' AND fieldname LIKE '%valuation%';
+2026-09-23 14:28:04,492 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabItem`;
+2026-09-23 14:28:54,477 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e SELECT name, item_code, allow_zero_valuation_rate FROM `tabPOS Invoice Item` LIMIT 5;
+2026-09-23 14:29:03,750 INFO /home/mohamed/.local/bin/bench --site my_resturant mariadb -e DESC `tabSales Invoice Item`;
+2026-09-23 14:29:14,458 INFO /home/mohamed/.local/bin/bench --site my_resturant clear-cache
+2026-09-23 14:29:25,577 INFO /home/mohamed/.local/bin/bench --site my_resturant execute 
+import frappe
+from erpnext.accounts.doctype.pos_invoice_merge_log.pos_invoice_merge_log import POSInvoiceMergeLog
+doc = frappe.get_doc('POS Invoice', 'POS-INV-2026-00001')
+print('POS invoice allow_zero:', doc.items[0].allow_zero_valuation_rate)
+
+2026-09-23 14:30:15,201 INFO /home/mohamed/.local/bin/bench --site my_resturant execute 
+import frappe
+items = frappe.get_all('POS Invoice Item', filters={'docstatus': 1}, fields=['name', 'parent'])
+for item in items:
+    frappe.db.set_value('POS Invoice Item', item.name, 'allow_zero_valuation_rate', 1)
+    frappe.cache().hdel('POS Invoice', item.parent)
+frappe.db.commit()
+

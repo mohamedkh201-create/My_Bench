@@ -1,0 +1,147 @@
+2026-08-04 03:11:21,157 INFO ipython === bench console session ===
+2026-08-04 03:11:21,158 INFO ipython frappe.get_installed_apps()
+2026-08-04 03:11:21,158 INFO ipython frappe.get_conf()
+2026-08-04 03:11:21,158 INFO ipython === session end ===
+2026-08-04 03:15:54,658 INFO ipython === bench console session ===
+2026-08-04 03:15:54,658 INFO ipython frappe.get_all("DocType", filters={"module": "Restaurant App"}, fields=["name"])
+2026-08-04 03:15:54,658 INFO ipython === session end ===
+2026-08-04 18:59:17,050 INFO ipython === bench console session ===
+2026-08-04 18:59:17,058 INFO ipython frappe.get_all(
+    "Workspace",
+    filters={"app": "ury"},
+    fields=["name", "module"]
+)
+2026-08-04 18:59:17,058 INFO ipython find apps/ury -type d -name workspace
+2026-08-04 18:59:17,058 INFO ipython frappe.get_all(
+    "Workspace",
+    filters={"name": "URY"},
+    fields=["name", "module", "public", "is_hidden_for_all_users"]
+)
+2026-08-04 18:59:17,058 INFO ipython frappe.get_all(
+    "Workspace",
+    filters={"name": "URY"},
+    fields=["name", "module", "public", "is_hidden_for_all_users"]
+)
+2026-08-04 18:59:17,058 INFO ipython frappe.db.exists("Workspace", "URY")
+2026-08-04 18:59:17,058 INFO ipython frappe.get_roles("Administrator")
+2026-08-04 18:59:17,058 INFO ipython frappe.get_hooks("add_to_apps_screen")
+2026-08-04 18:59:17,058 INFO ipython from ury.permission import check_app_permission
+check_app_permission()
+2026-08-04 18:59:17,058 INFO ipython frappe.get_hooks("add_to_apps_screen", app_name="ury")
+2026-08-04 18:59:17,058 INFO ipython frappe.get_all("Workspace", filters={"module": "URY"}, fields=["name","title","public"])
+2026-08-04 18:59:17,058 INFO ipython frappe.get_doc("Workspace", "URY").route
+2026-08-04 18:59:17,058 INFO ipython ws = frappe.get_doc("Workspace", "URY")
+ws.as_dict()
+2026-08-04 18:59:17,059 INFO ipython frappe.get_doc("Workspace", "URY").get_route()
+2026-08-04 18:59:17,059 INFO ipython frappe.get_doc("Workspace", "URY").get_route()
+2026-08-04 18:59:17,059 INFO ipython ws = frappe.get_doc("Workspace", "URY")
+ws.route
+2026-08-04 18:59:17,059 INFO ipython ws = frappe.get_doc("Workspace", "URY")
+ws.meta.get_fieldnames()
+2026-08-04 18:59:17,059 INFO ipython ws = frappe.get_doc("Workspace", "URY")
+[f.fieldname for f in ws.meta.fields]
+2026-08-04 18:59:17,059 INFO ipython ws.as_dict()
+2026-08-04 18:59:17,059 INFO ipython app: "ury"
+2026-08-04 18:59:17,059 INFO ipython frappe.db.set_value("Workspace", "URY", "app", "ury")
+2026-08-04 18:59:17,059 INFO ipython frappe.clear_cache()
+2026-08-04 18:59:17,059 INFO ipython === session end ===
+2026-09-15 02:03:47,253 INFO ipython === bench console session ===
+2026-09-15 02:03:47,254 INFO ipython import frappe
+2026-09-15 02:03:47,254 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 02:03:47,254 INFO ipython frappe.connect()
+2026-09-15 02:03:47,254 INFO ipython docs = frappe.get_all("POS Opening Entry", filters={"status": "Open"})
+2026-09-15 02:03:47,254 INFO ipython for d in docs:
+    doc = frappe.get_doc("POS Opening Entry", d.name)
+    print(f"Cancelling {doc.name}")
+    doc.db_set("status", "Cancelled")
+2026-09-15 02:03:47,254 INFO ipython frappe.db.commit()
+2026-09-15 02:03:47,254 INFO ipython print("Done")
+2026-09-15 02:03:47,254 INFO ipython === session end ===
+2026-09-15 02:08:30,328 INFO ipython === bench console session ===
+2026-09-15 02:08:30,328 INFO ipython import frappe
+2026-09-15 02:08:30,328 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 02:08:30,328 INFO ipython frappe.connect()
+2026-09-15 02:08:30,328 INFO ipython frappe.set_user("ali@gmail.com")
+2026-09-15 02:08:30,328 INFO ipython try:
+    from cpro.api.shift import open_shift
+    print(open_shift("zed", []))
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+2026-09-15 02:08:30,328 INFO ipython === session end ===
+2026-09-15 02:57:46,036 INFO ipython === bench console session ===
+2026-09-15 02:57:46,037 INFO ipython import frappe
+2026-09-15 02:57:46,037 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 02:57:46,037 INFO ipython frappe.connect()
+2026-09-15 02:57:46,037 INFO ipython field = frappe.get_meta("POS Profile").get_field("taxes_and_charges")
+2026-09-15 02:57:46,037 INFO ipython print(field.fieldname if field else "Not Found")
+2026-09-15 02:57:46,037 INFO ipython === session end ===
+2026-09-15 03:02:40,019 INFO ipython === bench console session ===
+2026-09-15 03:02:40,019 INFO ipython import frappe
+2026-09-15 03:02:40,019 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 03:02:40,019 INFO ipython frappe.connect()
+2026-09-15 03:02:40,019 INFO ipython from cpro.api.pos import save_order
+2026-09-15 03:02:40,019 INFO ipython order_data = {
+    "pos_profile": "كاشير فرع المهندسين",
+    "customer": "Mohamed Khaled",
+    "order_type": "Take Away",
+    "table": "",
+    "print_invoice": 0,
+    "items": [
+        {"item_code": "Burger", "qty": 1, "rate": 100}
+    ]
+}
+2026-09-15 03:02:40,019 INFO ipython try:
+    res = save_order(order_data)
+    print("RES:", res)
+    if "name" in res:
+        doc = frappe.get_doc("POS Invoice", res["name"])
+        print("Total:", doc.total)
+        print("Taxes:", doc.total_taxes_and_charges)
+        print("Grand Total:", doc.grand_total)
+        print("Outstanding:", doc.outstanding_amount)
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+2026-09-15 03:02:40,019 INFO ipython === session end ===
+2026-09-15 03:05:25,053 INFO ipython === bench console session ===
+2026-09-15 03:05:25,053 INFO ipython import frappe
+2026-09-15 03:05:25,054 INFO ipython profiles = frappe.get_all("POS Profile", fields=["name", "taxes_and_charges"])
+2026-09-15 03:05:25,054 INFO ipython for p in profiles:
+    print(f"Profile: {p.name}, Tax Template: {p.taxes_and_charges}")
+2026-09-15 03:05:25,054 INFO ipython === session end ===
+2026-09-15 03:05:48,542 INFO ipython === bench console session ===
+2026-09-15 03:05:48,542 INFO ipython import frappe
+2026-09-15 03:05:48,542 INFO ipython taxes = frappe.get_all("Sales Taxes and Charges", filters={"parent": "Egypt Tax - MR"}, fields=["rate"])
+2026-09-15 03:05:48,542 INFO ipython print("Rates:", taxes)
+2026-09-15 03:05:48,542 INFO ipython === session end ===
+2026-09-15 03:08:09,487 INFO ipython === bench console session ===
+2026-09-15 03:08:09,487 INFO ipython import frappe
+2026-09-15 03:08:09,488 INFO ipython from cpro.api.pos import get_pos_tax_rate
+2026-09-15 03:08:09,488 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 03:08:09,488 INFO ipython frappe.connect()
+2026-09-15 03:08:09,488 INFO ipython print("اليماني", get_pos_tax_rate("اليماني"))
+2026-09-15 03:08:09,488 INFO ipython print("zed", get_pos_tax_rate("zed"))
+2026-09-15 03:08:09,488 INFO ipython === session end ===
+2026-09-15 03:20:33,994 INFO ipython === bench console session ===
+2026-09-15 03:20:33,995 INFO ipython import frappe
+2026-09-15 03:20:33,995 INFO ipython pos = frappe.get_doc("POS Profile", "اليماني")
+2026-09-15 03:20:33,995 INFO ipython === session end ===
+2026-09-15 03:21:04,845 INFO ipython === bench console session ===
+2026-09-15 03:21:04,845 INFO ipython import frappe
+2026-09-15 03:21:04,845 INFO ipython === session end ===
+2026-09-15 03:22:36,486 INFO ipython === bench console session ===
+2026-09-15 03:22:36,486 INFO ipython import frappe
+2026-09-15 03:22:36,486 INFO ipython from cpro.api.pos import save_order
+2026-09-15 03:22:36,486 INFO ipython frappe.init(site="my_resturant")
+2026-09-15 03:22:36,486 INFO ipython frappe.connect()
+2026-09-15 03:22:36,486 INFO ipython order_data = {
+    "pos_profile": "اليماني",
+    "customer": "Mohamed Khaled",
+    "order_type": "Take Away",
+    "print_invoice": 0,
+    "items": [
+        {"item_code": "Burger", "qty": 1, "rate": 100}
+    ]
+}
+2026-09-15 03:22:36,486 INFO ipython === session end ===

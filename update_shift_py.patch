@@ -1,0 +1,16 @@
+--- apps/cpro/cpro/api/shift.py
++++ apps/cpro/cpro/api/shift.py
+@@ -298,6 +298,13 @@
+ "net_total": doc.net_total,
+ "total_taxes_and_charges": doc.total_taxes_and_charges,
+ "difference_total": sum(flt(r.difference) for r in doc.payment_reconciliation),
++"payments": [
++{
++"mode_of_payment": r.mode_of_payment,
++"expected_amount": flt(r.expected_amount),
++"closing_amount": flt(r.closing_amount),
++"difference": flt(r.difference),
++}
++for r in doc.payment_reconciliation
++]
+ }

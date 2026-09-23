@@ -1,0 +1,539 @@
+2026-09-03 22:28:00,705 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/user/test/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7ad19df80ec0>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 117, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 161, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 173, in is_scheduler_disabled
+    scheduler_disabled = not frappe.get_system_settings("enable_scheduler")
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/system_settings/system_settings.py", line 265, in get_system_settings
+    system_settings = frappe.client_cache.get_doc("System Settings")
+  File "/home/user/test/apps/frappe/frappe/utils/redis_wrapper.py", line 581, in get_doc
+    return self.get_value(key, generator=lambda: frappe.get_doc(doctype, name))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/redis_wrapper.py", line 544, in get_value
+    val = generator()
+  File "/home/user/test/apps/frappe/frappe/utils/redis_wrapper.py", line 581, in <lambda>
+    return self.get_value(key, generator=lambda: frappe.get_doc(doctype, name))
+                                                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/model/utils/__init__.py", line 225, in wrapper
+    return dispatch(args[0])(*args, **kw)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/model/document.py", line 143, in get_doc_str
+    if controller := get_controller(doctype):
+                     ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/model/base_document.py", line 92, in get_controller
+    site_controllers[doctype] = import_controller(doctype)
+                                ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/model/base_document.py", line 103, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, ("module", "custom", "is_tree"), as_dict=True)
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 564, in get_value
+    result = self.get_values(
+    	doctype,
+    ...<13 lines>...
+    	wait=wait,
+    )
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 667, in get_values
+    query = frappe.qb.get_query(
+    	table=doctype,
+    ...<7 lines>...
+    	limit=limit,
+    )
+  File "/home/user/test/apps/frappe/frappe/query_builder/utils.py", line 65, in get_query
+    return Engine().get_query(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/query.py", line 293, in get_query
+    self.apply_filters(filters)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/query.py", line 389, in apply_filters
+    self.apply_dict_filters(filters, collect=collect)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/query.py", line 528, in apply_dict_filters
+    self._apply_filter(field, value, operator, collect=collect)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/query.py", line 539, in _apply_filter
+    criterion = self._build_criterion_for_simple_filter(field, value, operator, doctype)
+  File "/home/user/test/apps/frappe/frappe/database/query.py", line 557, in _build_criterion_for_simple_filter
+    additional_filters_config = get_additional_filters_from_hooks()
+  File "/home/user/test/apps/frappe/frappe/boot.py", line 313, in get_additional_filters_from_hooks
+    filter_hooks = frappe.get_hooks("filters_config")
+  File "/home/user/test/apps/frappe/frappe/__init__.py", line 1004, in get_hooks
+    hooks = _site_cached_load_app_hooks()
+  File "/home/user/test/apps/frappe/frappe/utils/caching.py", line 157, in site_cache_wrapper
+    result = func(*args, **kwargs)
+  File "/home/user/test/apps/frappe/frappe/__init__.py", line 966, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+                                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/user/test/apps/frappe/frappe/__init__.py", line 936, in get_installed_apps
+    installed = orjson.loads(db.get_global("installed_apps") or "[]")
+                             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 1142, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 1146, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 1162, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/user/test/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/query_builder/utils.py", line 135, in execute_query
+    result = frappe.local.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 249, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/database/database.py", line 147, in connect
+    self.get_connection()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 113, in get_connection
+    conn = self._get_connection()
+  File "/home/user/test/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 118, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 121, in create_connection
+    return MySQLdb.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/user/test/env/lib/python3.14/site-packages/MySQLdb/connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+MySQLdb.OperationalError: (2002, "Can't connect to server on '127.0.0.1' (115)")
+2026-09-05 14:36:00,543 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 2610, in get_connection
+    connection.can_read()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1110, in can_read
+    return self._parser.can_read(timeout)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 101, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 112, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 2617, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-09-05 14:40:00,703 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 2603, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-09-05 14:44:00,838 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/user/test/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 2603, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/user/test/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-09-13 02:44:00,683 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7e29a5928e90>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/scheduler.py", line 117, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/scheduler.py", line 161, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/scheduler.py", line 173, in is_scheduler_disabled
+    scheduler_disabled = not frappe.get_system_settings("enable_scheduler")
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/core/doctype/system_settings/system_settings.py", line 265, in get_system_settings
+    system_settings = frappe.client_cache.get_doc("System Settings")
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/redis_wrapper.py", line 581, in get_doc
+    return self.get_value(key, generator=lambda: frappe.get_doc(doctype, name))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/redis_wrapper.py", line 544, in get_value
+    val = generator()
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/redis_wrapper.py", line 581, in <lambda>
+    return self.get_value(key, generator=lambda: frappe.get_doc(doctype, name))
+                                                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/model/utils/__init__.py", line 225, in wrapper
+    return dispatch(args[0])(*args, **kw)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/model/document.py", line 143, in get_doc_str
+    if controller := get_controller(doctype):
+                     ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/model/base_document.py", line 92, in get_controller
+    site_controllers[doctype] = import_controller(doctype)
+                                ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/model/base_document.py", line 103, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, ("module", "custom", "is_tree"), as_dict=True)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 564, in get_value
+    result = self.get_values(
+    	doctype,
+    ...<13 lines>...
+    	wait=wait,
+    )
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 667, in get_values
+    query = frappe.qb.get_query(
+    	table=doctype,
+    ...<7 lines>...
+    	limit=limit,
+    )
+  File "/home/mohamed/my_bench/apps/frappe/frappe/query_builder/utils.py", line 65, in get_query
+    return Engine().get_query(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/query.py", line 296, in get_query
+    self.apply_filters(filters)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/query.py", line 394, in apply_filters
+    self.apply_dict_filters(filters, collect=collect)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/query.py", line 533, in apply_dict_filters
+    self._apply_filter(field, value, operator, collect=collect)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/query.py", line 544, in _apply_filter
+    criterion = self._build_criterion_for_simple_filter(field, value, operator, doctype)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/query.py", line 562, in _build_criterion_for_simple_filter
+    additional_filters_config = get_additional_filters_from_hooks()
+  File "/home/mohamed/my_bench/apps/frappe/frappe/boot.py", line 314, in get_additional_filters_from_hooks
+    filter_hooks = frappe.get_hooks("filters_config")
+  File "/home/mohamed/my_bench/apps/frappe/frappe/__init__.py", line 1004, in get_hooks
+    hooks = _site_cached_load_app_hooks()
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/caching.py", line 157, in site_cache_wrapper
+    result = func(*args, **kwargs)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/__init__.py", line 966, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+                                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/__init__.py", line 936, in get_installed_apps
+    installed = orjson.loads(db.get_global("installed_apps") or "[]")
+                             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 1142, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 1146, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 1162, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/query_builder/utils.py", line 139, in execute_query
+    result = frappe.local.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 249, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/database.py", line 147, in connect
+    self.get_connection()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 113, in get_connection
+    conn = self._get_connection()
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 118, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/database/mariadb/mysqlclient.py", line 121, in create_connection
+    return MySQLdb.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/MySQLdb/connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1045, "Access denied for user '_76210c0fca237bd0'@'localhost' (using password: YES)")
+2026-09-13 03:08:01,014 ERROR scheduler Exception in Enqueue Events for Site my_resturant
+Traceback (most recent call last):
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 2610, in get_connection
+    connection.can_read()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 1110, in can_read
+    return self._parser.can_read(timeout)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 101, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 112, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/mohamed/my_bench/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 2617, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/mohamed/my_bench/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-09-18 04:32:00,163 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for my_resturant
+2026-09-18 04:32:00,179 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for my_resturant
+2026-09-18 04:32:00,180 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for my_resturant
+2026-09-18 04:32:00,184 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for my_resturant
+2026-09-18 04:32:00,186 ERROR scheduler Skipped queueing erpnext.accounts.doctype.bank_transaction_rule.bank_transaction_rule.scheduler_run_rule_evaluation because it was found in queue for my_resturant
+2026-09-18 04:32:00,188 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for my_resturant
+2026-09-18 04:32:00,189 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for my_resturant
+2026-09-18 04:32:00,190 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for my_resturant
+2026-09-18 04:32:00,191 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for my_resturant
+2026-09-18 04:32:00,192 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for my_resturant
+2026-09-18 04:32:00,197 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for my_resturant
+2026-09-18 04:32:00,199 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for my_resturant
+2026-09-18 04:32:00,202 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for my_resturant
+2026-09-18 04:32:00,203 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for my_resturant
+2026-09-18 04:32:00,205 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for my_resturant

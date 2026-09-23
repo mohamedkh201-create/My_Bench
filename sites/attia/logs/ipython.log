@@ -1,0 +1,5 @@
+2026-08-04 19:14:35,174 INFO ipython === bench console session ===
+2026-08-04 19:14:35,174 INFO ipython frappe.get_all("Workspace", filters={"module": "first_app"})
+2026-08-04 19:14:35,174 INFO ipython frappe.get_all("Workspace", filters={"module": "ury"})
+2026-08-04 19:14:35,174 INFO ipython frappe.get_all("Module Def", filters={"app_name": "ury"})
+2026-08-04 19:14:35,174 INFO ipython === session end ===
